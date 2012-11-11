@@ -9,42 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface GetHelp : NSObject
-{
-    @private int x;
-            int y;
-@private
-    int x;
-}
-//test
-
-//test1
-//test1//test1//test1
-//test1//test1
-//test1
-//test1
-//test1
-//test1
-//test1
-//test1
-//test1
-//test1
-//test1
-//ASHDKSAHDKASHKACHA
-//aADSKLASKDASLDASKLAS
-//ASHDKSAHDKASHKACHA
-//aADSKLASKDASLDASKLAS
-//ASHDKSAHDKASHKACHA
-//aADSKLASKDASLDASKLAS//ASHDKSAHDKASHKACHA
-//aADSKLASKDASLDASKLAS
-
-@property int x;
-
-
-
-
-//test1
-
-//test1
 
 
 
