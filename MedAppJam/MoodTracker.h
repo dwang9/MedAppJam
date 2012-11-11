@@ -10,4 +10,5 @@
 
 @interface MoodTracker : NSObject
 
+
 @end
