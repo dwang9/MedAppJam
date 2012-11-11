@@ -9,6 +9,20 @@
 #import <Foundation/Foundation.h>
 
 @interface GetHelp : NSObject
+{
+@private
+    int x;
+}
+
+//ASHDKSAHDKASHKACHA
+//aADSKLASKDASLDASKLAS
+//ASHDKSAHDKASHKACHA
+//aADSKLASKDASLDASKLAS
+//ASHDKSAHDKASHKACHA
+//aADSKLASKDASLDASKLAS//ASHDKSAHDKASHKACHA
+//aADSKLASKDASLDASKLAS
+
+@property int x;
 
 
 
