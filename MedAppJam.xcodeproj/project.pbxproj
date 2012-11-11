@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41066CA616502157000214B2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41066CA516502157000214B2 /* .gitignore */; };
 		41D96EDB164FE14C00AFF60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D96EDA164FE14C00AFF60F /* UIKit.framework */; };
 		41D96EDD164FE14C00AFF60F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D96EDC164FE14C00AFF60F /* Foundation.framework */; };
 		41D96EDF164FE14C00AFF60F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D96EDE164FE14C00AFF60F /* CoreGraphics.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		41066CA516502157000214B2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		41D96ED6164FE14C00AFF60F /* MedAppJam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedAppJam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D96EDA164FE14C00AFF60F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41D96EDC164FE14C00AFF60F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +91,7 @@
 		41D96ECB164FE14C00AFF60F = {
 			isa = PBXGroup;
 			children = (
+				41066CA516502157000214B2 /* .gitignore */,
 				41D96EE0164FE14C00AFF60F /* MedAppJam */,
 				41D96F07164FE14C00AFF60F /* MedAppJamTests */,
 				41D96ED9164FE14C00AFF60F /* Frameworks */,
@@ -240,6 +243,7 @@
 				41D96EF1164FE14C00AFF60F /* Default-568h@2x.png in Resources */,
 				41D96EF4164FE14C00AFF60F /* MainStoryboard_iPhone.storyboard in Resources */,
 				41D96EF7164FE14C00AFF60F /* MainStoryboard_iPad.storyboard in Resources */,
+				41066CA616502157000214B2 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +465,7 @@
 				41D96F14164FE14C00AFF60F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		41D96F15164FE14C00AFF60F /* Build configuration list for PBXNativeTarget "MedAppJamTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +474,7 @@
 				41D96F17164FE14C00AFF60F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
