@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BF01C56165044E600D2735F /* GetHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF01C55165044E600D2735F /* GetHelp.m */; };
 		41066CA616502157000214B2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41066CA516502157000214B2 /* .gitignore */; };
 		41D96EDB164FE14C00AFF60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D96EDA164FE14C00AFF60F /* UIKit.framework */; };
 		41D96EDD164FE14C00AFF60F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D96EDC164FE14C00AFF60F /* Foundation.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BF01C54165044E600D2735F /* GetHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHelp.h; sourceTree = "<group>"; };
+		1BF01C55165044E600D2735F /* GetHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetHelp.m; sourceTree = "<group>"; };
 		41066CA516502157000214B2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		41D96ED6164FE14C00AFF60F /* MedAppJam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedAppJam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D96EDA164FE14C00AFF60F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,8 @@
 		41D96EE0164FE14C00AFF60F /* MedAppJam */ = {
 			isa = PBXGroup;
 			children = (
+				1BF01C54165044E600D2735F /* GetHelp.h */,
+				1BF01C55165044E600D2735F /* GetHelp.m */,
 				4D840ABA16503106003C0C8D /* MoodTracker.h */,
 				4D840ABB16503106003C0C8D /* MoodTracker.m */,
 				41D96EE9164FE14C00AFF60F /* AppDelegate.h */,
@@ -287,6 +292,7 @@
 				41D96EEB164FE14C00AFF60F /* AppDelegate.m in Sources */,
 				41D96EFA164FE14C00AFF60F /* ViewController.m in Sources */,
 				4D840ABC16503106003C0C8D /* MoodTracker.m in Sources */,
+				1BF01C56165044E600D2735F /* GetHelp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
