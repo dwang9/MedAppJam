@@ -25,6 +25,7 @@
 		41D96F04164FE14C00AFF60F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D96EDC164FE14C00AFF60F /* Foundation.framework */; };
 		41D96F0C164FE14C00AFF60F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41D96F0A164FE14C00AFF60F /* InfoPlist.strings */; };
 		41D96F0F164FE14C00AFF60F /* MedAppJamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D96F0E164FE14C00AFF60F /* MedAppJamTests.m */; };
+		4D840ABC16503106003C0C8D /* MoodTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D840ABB16503106003C0C8D /* MoodTracker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		41D96F0B164FE14C00AFF60F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41D96F0D164FE14C00AFF60F /* MedAppJamTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedAppJamTests.h; sourceTree = "<group>"; };
 		41D96F0E164FE14C00AFF60F /* MedAppJamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedAppJamTests.m; sourceTree = "<group>"; };
+		4D840ABA16503106003C0C8D /* MoodTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodTracker.h; sourceTree = "<group>"; };
+		4D840ABB16503106003C0C8D /* MoodTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodTracker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 		41D96EE0164FE14C00AFF60F /* MedAppJam */ = {
 			isa = PBXGroup;
 			children = (
+				4D840ABA16503106003C0C8D /* MoodTracker.h */,
+				4D840ABB16503106003C0C8D /* MoodTracker.m */,
 				41D96EE9164FE14C00AFF60F /* AppDelegate.h */,
 				41D96EEA164FE14C00AFF60F /* AppDelegate.m */,
 				41D96EF2164FE14C00AFF60F /* MainStoryboard_iPhone.storyboard */,
@@ -281,6 +286,7 @@
 				41D96EE7164FE14C00AFF60F /* main.m in Sources */,
 				41D96EEB164FE14C00AFF60F /* AppDelegate.m in Sources */,
 				41D96EFA164FE14C00AFF60F /* ViewController.m in Sources */,
+				4D840ABC16503106003C0C8D /* MoodTracker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
