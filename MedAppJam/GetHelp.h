@@ -11,6 +11,8 @@
 @interface GetHelp : NSObject
 
 
+
+@property int x;
 //asklhdaslkd
 //askldhaslda
 //askldajsld
