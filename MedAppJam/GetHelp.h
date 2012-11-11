@@ -9,6 +9,35 @@
 #import <Foundation/Foundation.h>
 
 @interface GetHelp : NSObject
+{
+    @private int x;
+            int y;
+}
+//test
+
+//test1
+//test1//test1//test1
+//test1//test1
+//test1
+//test1
+//test1
+//test1
+//test1
+//test1
+//test1
+//test1
+//test1
+
+
+
+
+
+//test1
+
+//test1
+
+
+
 
 
 
