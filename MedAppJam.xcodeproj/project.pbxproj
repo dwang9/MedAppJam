@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BA7E5E016506FE900C03835 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7E5DF16506FE900C03835 /* Resources.m */; };
+		1BA7E5E41650702700C03835 /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7E5E31650702700C03835 /* Reminder.m */; };
 		1BF01C56165044E600D2735F /* GetHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF01C55165044E600D2735F /* GetHelp.m */; };
 		41066CA616502157000214B2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41066CA516502157000214B2 /* .gitignore */; };
 		41D96EDB164FE14C00AFF60F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D96EDA164FE14C00AFF60F /* UIKit.framework */; };
@@ -40,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BA7E5DE16506FE900C03835 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
+		1BA7E5DF16506FE900C03835 /* Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resources.m; sourceTree = "<group>"; };
+		1BA7E5E21650702700C03835 /* Reminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reminder.h; sourceTree = "<group>"; };
+		1BA7E5E31650702700C03835 /* Reminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reminder.m; sourceTree = "<group>"; };
 		1BF01C54165044E600D2735F /* GetHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHelp.h; sourceTree = "<group>"; };
 		1BF01C55165044E600D2735F /* GetHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetHelp.m; sourceTree = "<group>"; };
 		41066CA516502157000214B2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -128,6 +134,10 @@
 		41D96EE0164FE14C00AFF60F /* MedAppJam */ = {
 			isa = PBXGroup;
 			children = (
+				1BA7E5E21650702700C03835 /* Reminder.h */,
+				1BA7E5E31650702700C03835 /* Reminder.m */,
+				1BA7E5DE16506FE900C03835 /* Resources.h */,
+				1BA7E5DF16506FE900C03835 /* Resources.m */,
 				1BF01C54165044E600D2735F /* GetHelp.h */,
 				1BF01C55165044E600D2735F /* GetHelp.m */,
 				4D840ABA16503106003C0C8D /* MoodTracker.h */,
@@ -293,6 +303,8 @@
 				41D96EFA164FE14C00AFF60F /* ViewController.m in Sources */,
 				4D840ABC16503106003C0C8D /* MoodTracker.m in Sources */,
 				1BF01C56165044E600D2735F /* GetHelp.m in Sources */,
+				1BA7E5E016506FE900C03835 /* Resources.m in Sources */,
+				1BA7E5E41650702700C03835 /* Reminder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

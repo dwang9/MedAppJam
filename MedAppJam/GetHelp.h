@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GetHelp : NSObject
+@interface GetHelp : UIViewController
 
 
 
