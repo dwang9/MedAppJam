@@ -10,6 +10,28 @@
 
 @interface GetHelp : NSObject
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // COMMEMNT ASDJASASHFKAJF:AHFKAFAS
 
 
