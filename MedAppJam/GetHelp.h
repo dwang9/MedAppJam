@@ -11,13 +11,4 @@
 @interface GetHelp : UIViewController
 
 
-
-@property int x;
-//asklhdaslkd
-//askldhaslda///
-//askldajsld
-
-
-
-
 @end
