@@ -28,8 +28,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="GetHelp" destination="2" eventType="touchUpInside" id="UkN-5O-tLh"/>
-                                    <segue destination="iCO-aj-Eyf" kind="push" id="Tqf-jt-oxd"/>
+                                    <segue destination="iCO-aj-Eyf" kind="modal" id="mxc-p2-zOo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5MQ-mX-nUM">
@@ -43,8 +42,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="MoodTracker" destination="2" eventType="touchUpInside" id="2Re-E8-bcA"/>
-                                    <segue destination="L7o-fy-aaC" kind="push" id="KMZ-Ug-bGe"/>
+                                    <segue destination="L7o-fy-aaC" kind="modal" identifier="moodSegue" id="WFU-YQ-DC3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="E3t-nA-MeD">
@@ -58,7 +56,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="K1i-NW-xdS" kind="push" id="hN0-EE-bc9"/>
+                                    <segue destination="K1i-NW-xdS" kind="modal" id="Edz-zv-xYr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MWE-gB-9nj">
@@ -72,8 +70,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="Resources" destination="2" eventType="touchUpInside" id="zWV-lv-ddC"/>
-                                    <segue destination="Z4V-mW-DOa" kind="push" id="OzR-RK-EhM"/>
+                                    <segue destination="Z4V-mW-DOa" kind="modal" id="DkB-Zx-5kd"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5uR-bt-jjM">
@@ -103,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-64" y="179"/>
+            <point key="canvasLocation" x="-132" y="193"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jeO-Ar-VND">
@@ -146,7 +143,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TD7-hW-RCn" kind="push" id="T7g-f2-vTJ"/>
+                                    <segue destination="TD7-hW-RCn" kind="modal" id="T7g-f2-vTJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NyG-fa-FWv">
@@ -223,7 +220,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="iDu-v1-1f2" kind="push" id="A8f-Dj-usH"/>
+                                    <segue destination="iDu-v1-1f2" kind="modal" id="A8f-Dj-usH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -276,7 +273,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="L7o-fy-aaC" kind="push" id="w8P-Td-TfC"/>
+                                    <segue destination="L7o-fy-aaC" kind="modal" id="w8P-Td-TfC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -329,7 +326,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xFa-wG-C0x" kind="push" id="fAe-wZ-cd5"/>
+                                    <segue destination="xFa-wG-C0x" kind="modal" id="fAe-wZ-cd5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="General Mental Illness" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sqY-3G-Gkz">
@@ -446,7 +443,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="K1i-NW-xdS" kind="push" id="4un-HO-0Lt"/>
+                                    <segue destination="K1i-NW-xdS" kind="modal" id="4un-HO-0Lt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -525,7 +522,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="K1i-NW-xdS" kind="push" id="3Hc-0Y-e34"/>
+                                    <segue destination="K1i-NW-xdS" kind="modal" id="3Hc-0Y-e34"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" id="TuM-s9-8OY">
@@ -606,7 +603,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Z4V-mW-DOa" kind="push" id="9O8-4S-udf"/>
+                                    <segue destination="Z4V-mW-DOa" kind="modal" id="3oL-EL-VEx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -976,7 +973,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KgZ-Wt-WAC" kind="push" id="qEY-PI-8ML"/>
+                                    <segue destination="KgZ-Wt-WAC" kind="modal" id="qEY-PI-8ML"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vsm-ha-Kb9">
@@ -991,7 +988,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8vO-le-TNE" kind="push" id="MhP-kj-6zN"/>
+                                    <segue destination="8vO-le-TNE" kind="modal" id="MhP-kj-6zN"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="(Thinking about hurting yourself or others)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qtM-B5-18E">
@@ -1012,7 +1009,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3u9-W4-k2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="475" y="1598"/>
+            <point key="canvasLocation" x="475" y="1611"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ClI-ro-g1E">
@@ -1071,7 +1068,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Z4V-mW-DOa" kind="push" id="Rze-Dx-DWG"/>
+                                    <segue destination="Z4V-mW-DOa" kind="modal" id="Rze-Dx-DWG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kCt-QE-ucL">
@@ -1086,7 +1083,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KgZ-Wt-WAC" kind="push" id="71r-wc-VLg"/>
+                                    <segue destination="KgZ-Wt-WAC" kind="modal" id="71r-wc-VLg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1174,7 +1171,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <!--View Controller-->
         <scene sceneID="2z1-G2-Oux">
             <objects>
-                <viewController id="L7o-fy-aaC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="moodTrackerView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="L7o-fy-aaC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfy-M8-kCL">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1212,7 +1209,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KS6-Zq-Kps" kind="push" id="q8h-nD-Vs7"/>
+                                    <segue destination="KS6-Zq-Kps" kind="modal" id="q8h-nD-Vs7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ut7-je-7zh">
@@ -1227,7 +1224,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yOZ-5D-eMU" kind="push" id="Ger-jH-9Z5"/>
+                                    <segue destination="yOZ-5D-eMU" kind="modal" id="Ger-jH-9Z5"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1309,7 +1306,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WYK-P8-mR8" kind="push" id="6Jk-Os-J2P"/>
+                                    <segue destination="WYK-P8-mR8" kind="modal" id="6Jk-Os-J2P"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Which day are you entering data for?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C1C-lf-bnh">
@@ -1373,7 +1370,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="DnS-TI-eq6" kind="push" id="y2n-Ee-gQZ"/>
+                                    <segue destination="DnS-TI-eq6" kind="modal" id="y2n-Ee-gQZ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="How would you rate your mood today?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9Vz-Vg-Nh4">
@@ -1440,7 +1437,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="L7o-fy-aaC" kind="push" id="GaK-sR-tIK"/>
+                                    <segue destination="L7o-fy-aaC" kind="modal" id="GaK-sR-tIK"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wkA-WT-T4z">
@@ -1479,9 +1476,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="hN0-EE-bc9"/>
-        <segue reference="KMZ-Ug-bGe"/>
-        <segue reference="71r-wc-VLg"/>
-        <segue reference="9O8-4S-udf"/>
+        <segue reference="qEY-PI-8ML"/>
+        <segue reference="w8P-Td-TfC"/>
+        <segue reference="3oL-EL-VEx"/>
+        <segue reference="4un-HO-0Lt"/>
     </inferredMetricsTieBreakers>
 </document>

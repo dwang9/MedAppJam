@@ -29,7 +29,6 @@
 		41D96F0C164FE14C00AFF60F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41D96F0A164FE14C00AFF60F /* InfoPlist.strings */; };
 		41D96F0F164FE14C00AFF60F /* MedAppJamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D96F0E164FE14C00AFF60F /* MedAppJamTests.m */; };
 		41EB4FE216506CEF00404DD0 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE116506CEF00404DD0 /* Untitled.png */; };
-		41EB4FE416506DAF00404DD0 /* MedAppJam-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE316506DAF00404DD0 /* MedAppJam-Info.plist */; };
 		41EB4FE61650750800404DD0 /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE51650750800404DD0 /* Phone.png */; };
 		41EB4FE8165075F100404DD0 /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE7165075F100404DD0 /* Book.png */; };
 		41EB4FEA1650767100404DD0 /* Pills.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE91650767100404DD0 /* Pills.png */; };
@@ -281,7 +280,6 @@
 				41D96EF7164FE14C00AFF60F /* MainStoryboard_iPad.storyboard in Resources */,
 				41066CA616502157000214B2 /* .gitignore in Resources */,
 				41EB4FE216506CEF00404DD0 /* Untitled.png in Resources */,
-				41EB4FE416506DAF00404DD0 /* MedAppJam-Info.plist in Resources */,
 				41EB4FE61650750800404DD0 /* Phone.png in Resources */,
 				41EB4FE8165075F100404DD0 /* Book.png in Resources */,
 				41EB4FEA1650767100404DD0 /* Pills.png in Resources */,
