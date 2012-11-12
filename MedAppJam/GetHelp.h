@@ -7,12 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-
+//jdhsjhdfhjdfvhjdvhjdfbvvfdjhfdbvdbfvdfjvdfbvkfbvdfjbddfkv
+//fbdkbkjfdbjkdbfkjvbdfkj
 @interface GetHelp : UIViewController
 
-///askldfhasd
-
-///asd/f/
-//as/df///
-/////asdf
+//kbdkjnbjkfvkjdfb
+//kjdfhbjkbn
+//kjbkjfd
 @end
