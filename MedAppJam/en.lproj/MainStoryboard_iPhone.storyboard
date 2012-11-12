@@ -1095,10 +1095,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="1034" y="2154"/>
         </scene>
-        <!--View Controller-->
+        <!--Get Help-->
         <scene sceneID="SUN-bb-7PV">
             <objects>
-                <viewController id="KgZ-Wt-WAC" sceneMemberID="viewController">
+                <viewController id="KgZ-Wt-WAC" customClass="GetHelp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h5p-G0-ChU">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1124,8 +1124,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="0.26089425319999998" green="0.35110411349999998" blue="0.15544017739999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please immediately do one of the following:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x35-Ue-2Ef">
-                                <rect key="frame" x="-3" y="204" width="327" height="52"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Please immediately pick one below:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x35-Ue-2Ef">
+                                <rect key="frame" x="33" y="214" width="327" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.26089425319999998" green="0.35110411349999998" blue="0.15544017739999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1142,6 +1142,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="emergencyCall:" destination="KgZ-Wt-WAC" eventType="touchUpInside" id="Vtn-Wb-xIx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U7Z-pJ-1Xp">
                                 <rect key="frame" x="33" y="390" width="255" height="51"/>
@@ -1466,6 +1469,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="Untitled.png" width="320" height="416"/>
     </resources>
     <classes>
+        <class className="GetHelp" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/GetHelp.h"/>
+            <relationships>
+                <relationship kind="action" name="emergencyCall:" candidateClass="UIButton"/>
+            </relationships>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
         </class>
@@ -1476,9 +1485,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="WFU-YQ-DC3"/>
+        <segue reference="Edz-zv-xYr"/>
         <segue reference="qEY-PI-8ML"/>
-        <segue reference="w8P-Td-TfC"/>
         <segue reference="3oL-EL-VEx"/>
-        <segue reference="4un-HO-0Lt"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface GetHelp : UIViewController
 
-//kbdkjnbjkfvkjdfb
-//kjdfhbjkbn
-//kjbkjfd
+- (IBAction)emergencyCall:(UIButton *)sender;
+
+
 @end
