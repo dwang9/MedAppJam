@@ -1,14 +1,13 @@
 //
-//  GetHelp.h
+//  Reminder.m
 //  MedAppJam
 //
 //  Created by dwang9 on 11/11/12.
 //  Copyright (c) 2012 AppJam. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Reminder.h"
 
-@interface GetHelp : UIViewController
-
+@implementation Reminder
 
 @end

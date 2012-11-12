@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MoodTracker : NSObject
+@interface MoodTracker : UIViewController
 
 
 @end

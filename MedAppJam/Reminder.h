@@ -1,5 +1,5 @@
 //
-//  GetHelp.h
+//  Reminder.h
 //  MedAppJam
 //
 //  Created by dwang9 on 11/11/12.
@@ -8,7 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GetHelp : UIViewController
-
+@interface Reminder : UIViewController
 
 @end

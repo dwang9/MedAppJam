@@ -1,14 +1,13 @@
 //
-//  GetHelp.h
+//  Resources.m
 //  MedAppJam
 //
 //  Created by dwang9 on 11/11/12.
 //  Copyright (c) 2012 AppJam. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Resources.h"
 
-@interface GetHelp : UIViewController
-
+@implementation Resources
 
 @end
