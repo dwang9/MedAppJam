@@ -26,6 +26,12 @@
 		41D96F04164FE14C00AFF60F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D96EDC164FE14C00AFF60F /* Foundation.framework */; };
 		41D96F0C164FE14C00AFF60F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41D96F0A164FE14C00AFF60F /* InfoPlist.strings */; };
 		41D96F0F164FE14C00AFF60F /* MedAppJamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D96F0E164FE14C00AFF60F /* MedAppJamTests.m */; };
+		41EB4FE216506CEF00404DD0 /* Untitled.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE116506CEF00404DD0 /* Untitled.png */; };
+		41EB4FE416506DAF00404DD0 /* MedAppJam-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE316506DAF00404DD0 /* MedAppJam-Info.plist */; };
+		41EB4FE61650750800404DD0 /* Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE51650750800404DD0 /* Phone.png */; };
+		41EB4FE8165075F100404DD0 /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE7165075F100404DD0 /* Book.png */; };
+		41EB4FEA1650767100404DD0 /* Pills.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE91650767100404DD0 /* Pills.png */; };
+		41EB4FF016507AF400404DD0 /* Face.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FEF16507AF400404DD0 /* Face.png */; };
 		4D840ABC16503106003C0C8D /* MoodTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D840ABB16503106003C0C8D /* MoodTracker.m */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +53,6 @@
 		41D96EDA164FE14C00AFF60F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41D96EDC164FE14C00AFF60F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41D96EDE164FE14C00AFF60F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		41D96EE2164FE14C00AFF60F /* MedAppJam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MedAppJam-Info.plist"; sourceTree = "<group>"; };
 		41D96EE4164FE14C00AFF60F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41D96EE6164FE14C00AFF60F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		41D96EE8164FE14C00AFF60F /* MedAppJam-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MedAppJam-Prefix.pch"; sourceTree = "<group>"; };
@@ -66,6 +71,12 @@
 		41D96F0B164FE14C00AFF60F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		41D96F0D164FE14C00AFF60F /* MedAppJamTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MedAppJamTests.h; sourceTree = "<group>"; };
 		41D96F0E164FE14C00AFF60F /* MedAppJamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MedAppJamTests.m; sourceTree = "<group>"; };
+		41EB4FE116506CEF00404DD0 /* Untitled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Untitled.png; sourceTree = "<group>"; };
+		41EB4FE316506DAF00404DD0 /* MedAppJam-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MedAppJam-Info.plist"; sourceTree = "<group>"; };
+		41EB4FE51650750800404DD0 /* Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Phone.png; sourceTree = "<group>"; };
+		41EB4FE7165075F100404DD0 /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
+		41EB4FE91650767100404DD0 /* Pills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pills.png; sourceTree = "<group>"; };
+		41EB4FEF16507AF400404DD0 /* Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Face.png; sourceTree = "<group>"; };
 		4D840ABA16503106003C0C8D /* MoodTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodTracker.h; sourceTree = "<group>"; };
 		4D840ABB16503106003C0C8D /* MoodTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodTracker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,7 +157,12 @@
 		41D96EE1164FE14C00AFF60F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				41D96EE2164FE14C00AFF60F /* MedAppJam-Info.plist */,
+				41EB4FEF16507AF400404DD0 /* Face.png */,
+				41EB4FE91650767100404DD0 /* Pills.png */,
+				41EB4FE7165075F100404DD0 /* Book.png */,
+				41EB4FE51650750800404DD0 /* Phone.png */,
+				41EB4FE316506DAF00404DD0 /* MedAppJam-Info.plist */,
+				41EB4FE116506CEF00404DD0 /* Untitled.png */,
 				41D96EE3164FE14C00AFF60F /* InfoPlist.strings */,
 				41D96EE6164FE14C00AFF60F /* main.m */,
 				41D96EE8164FE14C00AFF60F /* MedAppJam-Prefix.pch */,
@@ -254,6 +270,12 @@
 				41D96EF4164FE14C00AFF60F /* MainStoryboard_iPhone.storyboard in Resources */,
 				41D96EF7164FE14C00AFF60F /* MainStoryboard_iPad.storyboard in Resources */,
 				41066CA616502157000214B2 /* .gitignore in Resources */,
+				41EB4FE216506CEF00404DD0 /* Untitled.png in Resources */,
+				41EB4FE416506DAF00404DD0 /* MedAppJam-Info.plist in Resources */,
+				41EB4FE61650750800404DD0 /* Phone.png in Resources */,
+				41EB4FE8165075F100404DD0 /* Book.png in Resources */,
+				41EB4FEA1650767100404DD0 /* Pills.png in Resources */,
+				41EB4FF016507AF400404DD0 /* Face.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
