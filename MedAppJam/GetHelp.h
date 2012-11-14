@@ -12,6 +12,8 @@
 @interface GetHelp : UIViewController
 
 - (IBAction)emergencyCall:(UIButton *)sender;
+- (IBAction)nationalCall:(UIButton *)sender;
+- (IBAction)nationalWarmCall:(UIButton *)sender;
 
 
 @end
