@@ -38,7 +38,7 @@
 {
     //this is the national warmline network
     NSString *phoneNumber = @"tel://18779109276";
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]]
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex

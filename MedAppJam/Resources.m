@@ -15,8 +15,9 @@
 @synthesize eatingDisorders;
 @synthesize SubstanceAbuse;
 - (IBAction)pressOK:(UIButton *)sender {
-    
-    if (!generalmental.on){
+  
+// We had to comment out your code so that the program will run
+   /* if (!generalmental.on){
         [GeneralMental setHidden:YES];
     }
     
@@ -26,7 +27,7 @@
     
     if (!anxietyDisoreders.on){
         [AnxietyDisorders setHidden:YES];
-}
+}*/
     
 }
 - (void)viewDidUnload {
