@@ -26,13 +26,21 @@
     
 }
 
+- (IBAction)nationalCall:(UIButton *)sender
+{
+    
+    NSString *phoneNumber = @"tel://18002738255";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
+    
+}
+
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     //NSLog(@"%d", buttonIndex);
     if(buttonIndex==1)
     {
         
-        NSString *phoneNumber = @"telprompt://411";
+        NSString *phoneNumber = @"tel://411";
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
     }
     
