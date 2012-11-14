@@ -11,6 +11,7 @@
 		1BA7E5E41650702700C03835 /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7E5E31650702700C03835 /* Reminder.m */; };
 		1BF01C56165044E600D2735F /* GetHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF01C55165044E600D2735F /* GetHelp.m */; };
 		41066CA616502157000214B2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41066CA516502157000214B2 /* .gitignore */; };
+		414262B91653A04800EC7F2F /* MoodInputController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 414262B81653A04800EC7F2F /* MoodInputController3.m */; };
 		41A622251653793B0038D409 /* MoodInputController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A622241653793B0038D409 /* MoodInputController2.m */; };
 		41A6223016538E5B0038D409 /* MoodEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A6222F16538E5B0038D409 /* MoodEntry.m */; };
 		41C6FC1416536F35005F2BE7 /* MoodInputController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 41C6FC1316536F35005F2BE7 /* MoodInputController1.m */; };
@@ -59,6 +60,8 @@
 		1BF01C54165044E600D2735F /* GetHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHelp.h; sourceTree = "<group>"; };
 		1BF01C55165044E600D2735F /* GetHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetHelp.m; sourceTree = "<group>"; };
 		41066CA516502157000214B2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		414262B71653A04800EC7F2F /* MoodInputController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodInputController3.h; sourceTree = "<group>"; };
+		414262B81653A04800EC7F2F /* MoodInputController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodInputController3.m; sourceTree = "<group>"; };
 		41A622231653793B0038D409 /* MoodInputController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodInputController2.h; sourceTree = "<group>"; };
 		41A622241653793B0038D409 /* MoodInputController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodInputController2.m; sourceTree = "<group>"; };
 		41A6222E16538E5A0038D409 /* MoodEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodEntry.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				41C6FC1316536F35005F2BE7 /* MoodInputController1.m */,
 				41A622231653793B0038D409 /* MoodInputController2.h */,
 				41A622241653793B0038D409 /* MoodInputController2.m */,
+				414262B71653A04800EC7F2F /* MoodInputController3.h */,
+				414262B81653A04800EC7F2F /* MoodInputController3.m */,
 				41A6222E16538E5A0038D409 /* MoodEntry.h */,
 				41A6222F16538E5B0038D409 /* MoodEntry.m */,
 				41D96EE9164FE14C00AFF60F /* AppDelegate.h */,
@@ -355,6 +360,7 @@
 				41C6FC1816536F6C005F2BE7 /* MoodTrackerController.m in Sources */,
 				41A622251653793B0038D409 /* MoodInputController2.m in Sources */,
 				41A6223016538E5B0038D409 /* MoodEntry.m in Sources */,
+				414262B91653A04800EC7F2F /* MoodInputController3.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

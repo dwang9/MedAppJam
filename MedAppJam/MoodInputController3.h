@@ -1,24 +1,22 @@
 //
-//  MoodInputController2.h
+//  MoodInputController3.h
 //  MedAppJam
 //
-//  Created by App Jam on 11/13/12.
+//  Created by App Jam on 11/14/12.
 //  Copyright (c) 2012 AppJam. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 @class MoodEntry, MoodInputController1;
 
-
-@interface MoodInputController2 : UIViewController
+@interface MoodInputController3 : UIViewController
 {
 @private
     MoodEntry* entry;
     MoodInputController1* rootController;
 }
-- (IBAction)cancel:(id)sender;
-@property (strong, nonatomic) MoodInputController1* rootController;
+
 @property (strong, nonatomic) MoodEntry* entry;
-- (IBAction)ok:(id)sender;
+@property (strong, nonatomic) MoodInputController1* rootController;
 
 @end

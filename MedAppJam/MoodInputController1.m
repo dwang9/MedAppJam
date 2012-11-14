@@ -32,6 +32,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    NSDate* now = [NSDate date];
+    [datePicker setDate: now animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,8 +55,11 @@
     {
         MoodInputController2* controller2 = [segue destinationViewController];
         
-        NSDate* date = datePicker.date;
-        entry.date = date;
+        // Create a new instance of MoodEntry
+        MoodEntry* newEntry = [[MoodEntry alloc] init];
+        self.entry = newEntry;
+        
+        entry.date = datePicker.date;
         NSLog(@"%@", entry.date);
 
         

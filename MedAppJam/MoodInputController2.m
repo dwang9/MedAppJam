@@ -8,6 +8,7 @@
 
 #import "MoodInputController2.h"
 #import "MoodInputController1.h"
+#import "MoodInputController3.h"
 #import "MoodEntry.h"
 
 @interface MoodInputController2 ()
@@ -17,7 +18,6 @@
 @implementation MoodInputController2
 @synthesize entry;
 @synthesize rootController;
-@synthesize Label;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -40,12 +40,28 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)cancel:(id)sender {
-    Label.text = [NSString stringWithFormat:@"%@", entry.date];
-    //[rootController dismissModalViewControllerAnimated:YES];
-}
 - (void)viewDidUnload {
-    Label = nil;
     [super viewDidUnload];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString: @"SetMoodInput3"])
+    {
+        MoodInputController3* controller3 = [segue destinationViewController];
+        
+        
+        
+        controller3.entry = self.entry;
+        controller3.rootController = self.rootController;
+    }
+}
+
+- (IBAction)cancel:(id)sender {
+    [rootController dismissModalViewControllerAnimated: NO];
+    [self dismissModalViewControllerAnimated:YES];
+}
+- (IBAction)ok:(id)sender {
+    [self performSegueWithIdentifier:@"SetMoodInput3" sender: self];
 }
 @end
