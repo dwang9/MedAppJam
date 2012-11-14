@@ -34,6 +34,7 @@
 		41EB4FEA1650767100404DD0 /* Pills.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE91650767100404DD0 /* Pills.png */; };
 		41EB4FF016507AF400404DD0 /* Face.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FEF16507AF400404DD0 /* Face.png */; };
 		4D840ABC16503106003C0C8D /* MoodTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D840ABB16503106003C0C8D /* MoodTracker.m */; };
+		87BAEAEE16534ABD0011BF14 /* ReminderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BAEAED16534ABD0011BF14 /* ReminderObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +85,8 @@
 		41EB4FEF16507AF400404DD0 /* Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Face.png; sourceTree = "<group>"; };
 		4D840ABA16503106003C0C8D /* MoodTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodTracker.h; sourceTree = "<group>"; };
 		4D840ABB16503106003C0C8D /* MoodTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodTracker.m; sourceTree = "<group>"; };
+		87BAEAEC16534ABD0011BF14 /* ReminderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderObject.h; sourceTree = "<group>"; };
+		87BAEAED16534ABD0011BF14 /* ReminderObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,8 @@
 			children = (
 				1BA7E5E21650702700C03835 /* Reminder.h */,
 				1BA7E5E31650702700C03835 /* Reminder.m */,
+				87BAEAEC16534ABD0011BF14 /* ReminderObject.h */,
+				87BAEAED16534ABD0011BF14 /* ReminderObject.m */,
 				1BA7E5DE16506FE900C03835 /* Resources.h */,
 				1BA7E5DF16506FE900C03835 /* Resources.m */,
 				1BF01C54165044E600D2735F /* GetHelp.h */,
@@ -325,6 +330,7 @@
 				1BF01C56165044E600D2735F /* GetHelp.m in Sources */,
 				1BA7E5E016506FE900C03835 /* Resources.m in Sources */,
 				1BA7E5E41650702700C03835 /* Reminder.m in Sources */,
+				87BAEAEE16534ABD0011BF14 /* ReminderObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
