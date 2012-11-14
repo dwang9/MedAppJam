@@ -117,7 +117,7 @@
             <objects>
                 <viewController id="K1i-NW-xdS" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5w5-So-SzI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="pzI-Nz-3oD">
@@ -430,7 +430,7 @@
             <objects>
                 <viewController id="TD7-hW-RCn" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OE-el-sai">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="tZr-Xt-xqK">
@@ -1155,12 +1155,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="1034" y="1598"/>
         </scene>
-        <!--View Controller-->
+        <!--Mood Tracker Controller-->
         <scene sceneID="2z1-G2-Oux">
             <objects>
-                <viewController storyboardIdentifier="moodTrackerView" id="L7o-fy-aaC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" id="L7o-fy-aaC" customClass="MoodTrackerController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rfy-M8-kCL">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="RMw-qv-Sdi">
@@ -1186,7 +1186,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="KS6-Zq-Kps" kind="modal" id="q8h-nD-Vs7"/>
+                                    <segue destination="KS6-Zq-Kps" kind="modal" id="o5d-Ba-Svs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ut7-je-7zh">
@@ -1207,16 +1207,16 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zcr-fV-Wnx"/>
+                    <navigationItem key="navigationItem" id="zcr-fV-Wnx" customClass="MoodTracker"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIo-vx-QV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="475" y="-646"/>
         </scene>
-        <!--View Controller-->
+        <!--Mood Input Controller1-->
         <scene sceneID="d2e-Dp-tfn">
             <objects>
-                <viewController id="KS6-Zq-Kps" sceneMemberID="viewController">
+                <viewController id="KS6-Zq-Kps" customClass="MoodInputController1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sUi-nQ-wwL">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1231,7 +1231,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="tintColor" red="0.5236532518" green="0.70467952810000001" blue="0.31101482520000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Title" id="nfo-da-nke">
-                                        <barButtonItem key="leftBarButtonItem" title="Options" id="RYX-dK-Kqb"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="axA-0A-wlH">
+                                            <connections>
+                                                <action selector="cancel:" destination="KS6-Zq-Kps" id="hx5-Ao-P8C"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1242,35 +1246,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="0.26089425319999998" green="0.35110411349999998" blue="0.15544017739999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="nbM-Wz-Bkc">
-                                <rect key="frame" x="0.0" y="145" width="320" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5236532518" green="0.70467952810000001" blue="0.31101482520000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <date key="date" timeIntervalSinceReferenceDate="374360466.99203402">
-                                    <!--2012-11-11 21:01:06 +0000-->
-                                </date>
-                                <timeZone key="timeZone" name="America/Los_Angeles">
-                                    <data key="data">
-VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
-y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
-5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
-8n/BkPNvwKD0X6OQ9U+ioPY/hZD3L4Sg+CiiEPkPZqD6CIQQ+viDIPvoZhD82GUg/chIEP64RyD/qCoQ
-AJgpIAGIDBACeAsgA3EokARhJ6AFUQqQBkEJoAcw7JAHjUOgCRDOkAmtvyAK8LCQC+CvoAzZzRANwJGg
-DrmvEA+priAQmZEQEYmQIBJ5cxATaXIgFFlVEBVJVCAWOTcQFyk2IBgiU5AZCRggGgI1kBryNKAb4heQ
-HNIWoB3B+ZAesfigH6HbkCB2KyAhgb2QIlYNICNq2hAkNe8gJUq8ECYV0SAnKp4QJ/7toCkKgBAp3s+g
-KupiECu+saAs036QLZ6ToC6zYJAvfnWgMJNCkDFnkiAycySQM0d0IDRTBpA1J1YgNjLokDcHOCA4HAUQ
-OOcaIDn75xA6xvwgO9vJEDywGKA9u6sQPo/6oD+bjRBAb9ygQYSpkEJPvqBDZIuQRC+goEVEbZBF89Mg
-Ry2KEEfTtSBJDWwQSbOXIErtThBLnLOgTNZqkE18laBOtkyQT1x3oFCWLpBRPFmgUnYQkFMcO6BUVfKQ
-VPwdoFY11JBW5TogWB7xEFjFHCBZ/tMQWqT+IFvetRBchOAgXb6XEF5kwiBfnnkQYE3eoGGHlZBiLcCg
-Y2d3kGQNoqBlR1mQZe2EoGcnO5BnzWagaQcdkGmtSKBq5v+Qa5ZlIGzQHBBtdkcgbq/+EG9WKSBwj+AQ
-cTYLIHJvwhBzFe0gdE+kEHT/CaB2OMCQdt7roHgYopB4vs2gefiEkHqer6B72GaQfH6RoH24SJB+XnOg
-f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
-AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
-AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
-AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</data>
-                                </timeZone>
-                            </datePicker>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Erb-Kp-uZy">
                                 <rect key="frame" x="33" y="390" width="255" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1283,7 +1258,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WYK-P8-mR8" kind="modal" id="6Jk-Os-J2P"/>
+                                    <action selector="ok:" destination="KS6-Zq-Kps" eventType="touchUpInside" id="yav-wY-zca"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Which day are you entering data for?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C1C-lf-bnh">
@@ -1296,16 +1271,21 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Wt2-UB-Bbu"/>
+                    <navigationItem key="navigationItem" id="Wt2-UB-Bbu">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="RYX-dK-Kqb"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="WYK-P8-mR8" kind="modal" identifier="SetMoodInput2" id="oNg-lb-Ld3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bX-hD-9m2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1034" y="-1203"/>
+            <point key="canvasLocation" x="1034" y="-1224"/>
         </scene>
-        <!--View Controller-->
+        <!--Mood Input Controller2-->
         <scene sceneID="nak-Cf-LW4">
             <objects>
-                <viewController id="WYK-P8-mR8" sceneMemberID="viewController">
+                <viewController id="WYK-P8-mR8" customClass="MoodInputController2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2d5-Am-8le">
                         <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1320,7 +1300,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="tintColor" red="0.5236532518" green="0.70467952810000001" blue="0.31101482520000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Title" id="SxE-ap-Fkm">
-                                        <barButtonItem key="leftBarButtonItem" title="Options" id="NbX-Kp-1Ux"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="NbX-Kp-1Ux">
+                                            <connections>
+                                                <action selector="cancel:" destination="WYK-P8-mR8" id="fD2-jc-jEH"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -1357,14 +1341,24 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="0.26089425319999998" green="0.35110411349999998" blue="0.15544017739999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2pT-bh-dOU">
+                                <rect key="frame" x="209" y="0.0" width="127" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="SJS-2r-unT"/>
+                    <connections>
+                        <outlet property="Label" destination="2pT-bh-dOU" id="lRA-gp-EEO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="suq-V7-9fH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="-1203"/>
+            <point key="canvasLocation" x="1600" y="-1224"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="K4D-bi-snz">
@@ -1432,7 +1426,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0c-TC-StK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2153" y="-1203"/>
+            <point key="canvasLocation" x="2152" y="-1224"/>
         </scene>
     </scenes>
     <resources>
@@ -1450,6 +1444,23 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="action" name="nationalCall:" candidateClass="UIButton"/>
                 <relationship kind="action" name="nationalWarmCall:" candidateClass="UIButton"/>
             </relationships>
+        </class>
+        <class className="MoodInputController1" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoodInputController1.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="ok:"/>
+            </relationships>
+        </class>
+        <class className="MoodInputController2" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoodInputController2.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="outlet" name="Label" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MoodTrackerController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoodTrackerController.h"/>
         </class>
         <class className="Reminder" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Reminder.h"/>
@@ -1484,9 +1495,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sI1-jg-ztH"/>
         <segue reference="KOX-Cb-ChD"/>
         <segue reference="Rze-Dx-DWG"/>
         <segue reference="4un-HO-0Lt"/>
+        <segue reference="GaK-sR-tIK"/>
     </inferredMetricsTieBreakers>
 </document>
