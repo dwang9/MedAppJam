@@ -984,7 +984,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVh-tN-EM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="1033"/>
+            <point key="canvasLocation" x="976" y="1033"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zCF-Qh-Tw5">
@@ -1542,12 +1542,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="action" name="emergencyCall:" candidateClass="UIButton"/>
                 <relationship kind="action" name="nationalCall:" candidateClass="UIButton"/>
                 <relationship kind="action" name="nationalWarmCall:" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="Resources" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Resources.h"/>
-            <relationships>
-                <relationship kind="action" name="pressOK:" candidateClass="UIButton"/>
             </relationships>
         </class>
         <class className="Reminder" superclassName="UIViewController">
