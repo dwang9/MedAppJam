@@ -34,9 +34,11 @@
     
 }
 
-- (IBAction)nationalWarmCall:(UIButton *)sender {
-    
-    NSString *phoneNumber = @"tel://"
+- (IBAction)nationalWarmCall:(UIButton *)sender
+{
+    //this is the national warmline network
+    NSString *phoneNumber = @"tel://18779109276";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]]
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -45,7 +47,7 @@
     if(buttonIndex==1)
     {
         
-        NSString *phoneNumber = @"tel://411";
+        NSString *phoneNumber = @"tel://911";
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
     }
     
