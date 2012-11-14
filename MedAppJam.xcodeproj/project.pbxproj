@@ -151,6 +151,8 @@
 				4DF617271653518A006BF3F8 /* ResourcesTableViewController.h */,
 				4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */,
 				1BA7E5E31650702700C03835 /* Reminder.m */,
+				87BAEAEC16534ABD0011BF14 /* ReminderObject.h */,
+				87BAEAED16534ABD0011BF14 /* ReminderObject.m */,
 				1BA7E5DE16506FE900C03835 /* Resources.h */,
 				1BA7E5DF16506FE900C03835 /* Resources.m */,
 				1BF01C54165044E600D2735F /* GetHelp.h */,
