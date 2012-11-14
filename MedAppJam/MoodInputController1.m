@@ -16,6 +16,7 @@
 
 @implementation MoodInputController1
 @synthesize entry;
+@synthesize datePicker;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,6 +41,7 @@
 }
 
 - (void)viewDidUnload {
+    datePicker = nil;
     [super viewDidUnload];
 }
 
@@ -51,7 +53,9 @@
     {
         MoodInputController2* controller2 = [segue destinationViewController];
         
-        
+        NSDate* date = datePicker.date;
+        entry.date = date;
+        NSLog(@"%@", entry.date);
 
         
         // Pass the entry along to the second input screen
