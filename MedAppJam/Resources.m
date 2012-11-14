@@ -16,15 +16,15 @@
 @synthesize SubstanceAbuse;
 - (IBAction)pressOK:(UIButton *)sender {
     
-    if (generalmental.off){
+    if (!generalmental.on){
         [GeneralMental setHidden:YES];
     }
     
-    if (depression.off){
+    if (!depression.on){
         [Depression setHidden:YES];
     }
     
-    if (anxietyDisoreders.off){
+    if (!anxietyDisoreders.on){
         [AnxietyDisorders setHidden:YES];
 }
     
