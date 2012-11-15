@@ -557,6 +557,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="PressCreateNewReminder:" destination="5KW-7D-T51" eventType="touchUpInside" id="6xc-e2-F0d"/>
                                     <segue destination="K1i-NW-xdS" kind="modal" id="3Hc-0Y-e34"/>
                                 </connections>
                             </button>
@@ -1497,6 +1498,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Reminder.h"/>
             <relationships>
                 <relationship kind="action" name="PressAddNewReminder:" candidateClass="UIButton"/>
+                <relationship kind="action" name="PressCreateNewReminder:" candidateClass="UIButton"/>
                 <relationship kind="action" name="PressReturnToMedicationReminders:" candidateClass="UIButton"/>
                 <relationship kind="action" name="PressViewExistingReminders:" candidateClass="UIButton"/>
                 <relationship kind="action" name="timePickerValueChanged:"/>
@@ -1530,7 +1532,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="4un-HO-0Lt"/>
+        <segue reference="3Hc-0Y-e34"/>
         <segue reference="WFU-YQ-DC3"/>
         <segue reference="qEY-PI-8ML"/>
         <segue reference="3oL-EL-VEx"/>

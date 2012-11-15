@@ -90,6 +90,12 @@ NSMutableArray *reminders;
     
 }
 
+- (IBAction)PressCreateNewReminder:(UIButton *)sender {
+    
+}
+
+
+
 - (void)viewDidUnload {
     [self setMedicationName:nil];
     [self setAmountToTake:nil];
