@@ -53,9 +53,9 @@ NSMutableArray *reminders;
         
         newReminder = [newReminder init];
         
-        [newReminder setNameOfMedication: @"Prozac"];
-        [newReminder setAmountToTake: @"20 mg"];
-        [newReminder setTimeToTake: @"2:00 PM"];
+        [newReminder setNameOfMedication: @"Wellbutrin"];
+        [newReminder setAmountToTake: @"100 mg"];
+        [newReminder setTimeToTake: @"7:00 PM"];
         
         //Add it to the end of the array
         [reminders addObject: newReminder];
@@ -77,6 +77,9 @@ NSMutableArray *reminders;
 
 - (IBAction)PressReturnToMedicationReminders:(UIButton *)sender {
     //Return the user to the medication reminders main page
+}
+
+- (IBAction)timePickerValueChanged:(id)sender {
 }
 
 - (void)viewDidUnload {
