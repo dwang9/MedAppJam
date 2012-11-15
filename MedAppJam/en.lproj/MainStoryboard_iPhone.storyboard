@@ -1502,6 +1502,20 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="TimeToTake" candidateClass="UIDatePicker"/>
             </relationships>
         </class>
+        <class className="Resources" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Resources.h"/>
+            <relationships>
+                <relationship kind="action" name="pressOK:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="SubstanceAbuse" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="anxietyDisoreders" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="depression" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="eatingDisorders" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="generalmental" candidateClass="UISwitch"/>
+            </relationships>
+        </class>
+        <class className="ResourcesTableViewController" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResourcesTableViewController.h"/>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
         </class>
@@ -1512,9 +1526,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3oL-EL-VEx"/>
         <segue reference="WFU-YQ-DC3"/>
+        <segue reference="DkB-Zx-5kd"/>
+        <segue reference="Edz-zv-xYr"/>
         <segue reference="qEY-PI-8ML"/>
-        <segue reference="4un-HO-0Lt"/>
     </inferredMetricsTieBreakers>
 </document>
