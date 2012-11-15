@@ -19,48 +19,13 @@
 @synthesize AmountToTake;   //The amount to take
 @synthesize TimeToTake;     //When to take it - Hour, Minute, AM/PM
 @synthesize TableOfReminders;
+@synthesize reminders;
 
-
-NSMutableArray *reminders;
 
 - (IBAction)PressAddNewReminder:(UIButton *)sender {
     //Go to Add New Reminder Page
     
-    //If no reminders already exist, then create the array of reminders with the information entered in the fields as the first value
-    if([reminders count] == 0){
-        //Create new reminder
-        
-        ReminderObject *newReminder;
-        
-        newReminder = [ReminderObject alloc];
-        
-        newReminder = [newReminder init];
-        
-        [newReminder setNameOfMedication: @"Prozac"];
-        [newReminder setAmountToTake: @"20 mg"];
-        [newReminder setTimeToTake: @"2:00 PM"];
-        
-        //Use it as the first element in the new array
-        reminders = [NSArray arrayWithObjects: newReminder, nil];
     }
-    //Else add a new reminder with the information entered in the fields to the end of the array
-    else{
-        //Create new reminder
-        
-        ReminderObject *newReminder;
-        
-        newReminder = [ReminderObject alloc];
-        
-        newReminder = [newReminder init];
-        
-        [newReminder setNameOfMedication: @"Prozac"];
-        [newReminder setAmountToTake: @"20 mg"];
-        [newReminder setTimeToTake: @"2:00 PM"];
-        
-        //Add it to the end of the array
-        [reminders addObject: newReminder];
-    }
-}
 
 - (IBAction)PressViewExistingReminders:(UIButton *)sender {
     //Go to View Eisting Reminders Page
@@ -77,6 +42,55 @@ NSMutableArray *reminders;
 
 - (IBAction)PressReturnToMedicationReminders:(UIButton *)sender {
     //Return the user to the medication reminders main page
+}
+
+
+- (IBAction)PressCreateNewReminder:(UIButton *)sender {
+    //If no reminders already exist, then create the array of reminders with the information entered in the fields as the first value
+    if([reminders count] == 0){
+        //Create new reminder
+        
+        ReminderObject *newReminder;
+        
+        newReminder = [ReminderObject alloc];
+        
+        newReminder = [newReminder init];
+        
+        //Change this to use actual values from the fields/picker
+        [newReminder setNameOfMedication: @"Prozac"];
+        [newReminder setAmountToTake: @"20 mg"];
+        [newReminder setTimeToTake: @"2:00 PM"];
+        
+        //Use it as the first element in the new array
+        reminders = [NSArray arrayWithObjects: newReminder, nil];
+        
+        //Now create an actual reminder in the phone
+    }
+    //Else add a new reminder with the information entered in the fields to the end of the array
+    else{
+        //Create new reminder
+        
+        ReminderObject *newReminder;
+        
+        newReminder = [ReminderObject alloc];
+        
+        newReminder = [newReminder init];
+        
+        //Change this to take actual values from the fields/picker
+        [newReminder setNameOfMedication: @"Wellbutrin"];
+        [newReminder setAmountToTake: @"100 mg"];
+        [newReminder setTimeToTake: @"7:00 PM"];
+        
+        //Add it to the end of the array
+        [reminders addObject: newReminder];
+        
+        //Now create an actual reminder in the phone
+    }
+
+}
+
+- (IBAction)timePickerValueChanged:(id)sender {
+
 }
 
 - (void)viewDidUnload {

@@ -557,6 +557,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="PressCreateNewReminder:" destination="5KW-7D-T51" eventType="touchUpInside" id="6xc-e2-F0d"/>
                                     <segue destination="K1i-NW-xdS" kind="modal" id="3Hc-0Y-e34"/>
                                 </connections>
                             </button>
@@ -587,6 +588,9 @@ AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 </data>
                                 </timeZone>
+                                <connections>
+                                    <action selector="timePickerValueChanged:" destination="5KW-7D-T51" eventType="valueChanged" id="1xH-u7-IhZ"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -1467,8 +1471,10 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Reminder.h"/>
             <relationships>
                 <relationship kind="action" name="PressAddNewReminder:" candidateClass="UIButton"/>
+                <relationship kind="action" name="PressCreateNewReminder:" candidateClass="UIButton"/>
                 <relationship kind="action" name="PressReturnToMedicationReminders:" candidateClass="UIButton"/>
                 <relationship kind="action" name="PressViewExistingReminders:" candidateClass="UIButton"/>
+                <relationship kind="action" name="timePickerValueChanged:"/>
                 <relationship kind="outlet" name="AmountToTake" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="MedicationName" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="TableOfReminders" candidateClass="UITableView"/>
