@@ -22,7 +22,7 @@
     }
     
     if (!depression.on){
-        [Depression setHidden:YES];
+        //[Depression setHidden:YES];
     }
     
     if (!anxietyDisoreders.on){

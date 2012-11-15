@@ -32,7 +32,7 @@
 }
 
 //Set amountToTake
-- (void) setAmounTToTake:(NSString *)input{
+- (void) setAmountToTake:(NSString *)input{
     amountToTake = input;
 }
 

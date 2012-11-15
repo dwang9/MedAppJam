@@ -17,29 +17,30 @@
 {
     
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test Alert"
-                                                    message:@"Are you sure?"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You Are About To Call 911."
+                                                    message:@""
                                                    delegate:self
                                           cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:@"Yes",nil];
+                                          otherButtonTitles:@"Continue",nil];
     [alert show];
     
+    
 }
 
-- (IBAction)nationalCall:(UIButton *)sender
+- (IBAction)nationalCall:(id)sender
 {
     
-    NSString *phoneNumber = @"tel://18002738255";
+    NSString *phoneNumber = @"tel:18002738255";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
     
 }
 
-- (IBAction)nationalWarmCall:(UIButton *)sender
+- (IBAction)nationalWarmCall:(id)sender
 {
     //this is the national warmline network
-    NSString *phoneNumber = @"tel://18779109276";
+    NSString *phoneNumber = @"tel:18779109276";
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
-}
+}	
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
@@ -47,7 +48,7 @@
     if(buttonIndex==1)
     {
         
-        NSString *phoneNumber = @"tel://911";
+        NSString *phoneNumber = @"tel:911";
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phoneNumber]];
     }
     

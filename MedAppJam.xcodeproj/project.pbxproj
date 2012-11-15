@@ -165,6 +165,8 @@
 		41D96EE0164FE14C00AFF60F /* MedAppJam */ = {
 			isa = PBXGroup;
 			children = (
+				4D1477831654904300BD21D5 /* ReminderTableViewController.h */,
+				4D1477841654904300BD21D5 /* ReminderTableViewController.m */,
 				870BF29D165359250077BA75 /* ReminderObject.h */,
 				870BF29B1653590E0077BA75 /* ReminderObject.m */,
 				1BA7E5E21650702700C03835 /* Reminder.h */,

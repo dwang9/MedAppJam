@@ -10,4 +10,8 @@
 
 @implementation ResourcesTableViewController
 
+-(void)pushTable: (NSString *)tableName linkArray:(NSArray *)linkArray{
+    
+    
+}
 @end
