@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Reminder.h"
 
-@interface ReminderTableViewController : UITableViewController
+@interface ReminderTableViewController : UITableViewController{
+    NSMutableArray *reminderArray;
+    Class *MyClass;
+}
 
 @end

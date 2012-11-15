@@ -25,6 +25,11 @@
 
 - (void)viewDidLoad
 {
+    //Import array from Reminder.h
+//    MyClass *MyClass = [[MyClass alloc]init];
+//    reminderArray = [myClass.myArray mutableCopy];
+    reminderArray = [[NSMutableArray alloc] initWithObjects:@"Apple",@"Pineapple",@"Banana",nil];
+    
     [super viewDidLoad];
 
     
@@ -48,14 +53,15 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    // In this case the size of the array
+    return [reminderArray count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -64,6 +70,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
+    
+    cell.textLabel.text = [reminderArray objectAtIndex:indexPath.row];
     
     return cell;
 }

@@ -22,4 +22,6 @@
 @property (weak, nonatomic) IBOutlet UIDatePicker *TimeToTake;
 @property (weak, nonatomic) IBOutlet UITableView *TableOfReminders;
 
+@property (weak, nonatomic) NSMutableArray *reminders;
+
 @end

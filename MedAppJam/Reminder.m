@@ -19,14 +19,33 @@
 @synthesize AmountToTake;   //The amount to take
 @synthesize TimeToTake;     //When to take it - Hour, Minute, AM/PM
 @synthesize TableOfReminders;
-
-NSMutableArray *reminders;
-
+@synthesize reminders;
 
 
 - (IBAction)PressAddNewReminder:(UIButton *)sender {
     //Go to Add New Reminder Page
     
+    }
+
+- (IBAction)PressViewExistingReminders:(UIButton *)sender {
+    //Go to View Eisting Reminders Page
+    
+    //If no reminders already exist, the table will be empty
+    if([reminders count] == 0){
+        
+    }
+    //Else the table will list each existing reminder
+    else{
+        
+    }
+}
+
+- (IBAction)PressReturnToMedicationReminders:(UIButton *)sender {
+    //Return the user to the medication reminders main page
+}
+
+
+- (IBAction)PressCreateNewReminder:(UIButton *)sender {
     //If no reminders already exist, then create the array of reminders with the information entered in the fields as the first value
     if([reminders count] == 0){
         //Create new reminder
@@ -67,34 +86,12 @@ NSMutableArray *reminders;
         
         //Now create an actual reminder in the phone
     }
-}
 
-- (IBAction)PressViewExistingReminders:(UIButton *)sender {
-    //Go to View Eisting Reminders Page
-    
-    //If no reminders already exist, the table will be empty
-    if([reminders count] == 0){
-        
-    }
-    //Else the table will list each existing reminder
-    else{
-        
-    }
-}
-
-- (IBAction)PressReturnToMedicationReminders:(UIButton *)sender {
-    //Return the user to the medication reminders main page
 }
 
 - (IBAction)timePickerValueChanged:(id)sender {
-    
+
 }
-
-- (IBAction)PressCreateNewReminder:(UIButton *)sender {
-    
-}
-
-
 
 - (void)viewDidUnload {
     [self setMedicationName:nil];
