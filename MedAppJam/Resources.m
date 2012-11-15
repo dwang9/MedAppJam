@@ -17,15 +17,15 @@
 - (IBAction)pressOK:(UIButton *)sender {
     
     if (!generalmental.on){
-        [GeneralMental setHidden:YES];
+        //[GeneralMental setHidden:YES];
     }
     
     if (!depression.on){
-        [Depression setHidden:YES];
+        //[Depression setHidden:YES];
     }
     
     if (!anxietyDisoreders.on){
-        [AnxietyDisorders setHidden:YES];
+        //[AnxietyDisorders setHidden:YES];
 }
     
 }
