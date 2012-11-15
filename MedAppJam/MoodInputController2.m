@@ -7,7 +7,6 @@
 //
 
 #import "MoodInputController2.h"
-#import "MoodInputController1.h"
 #import "MoodInputController3.h"
 #import "MoodEntry.h"
 
@@ -54,6 +53,7 @@
         
         controller3.entry = self.entry;
         controller3.rootController = self.rootController;
+        controller3.delegate = self.rootController;
     }
 }
 

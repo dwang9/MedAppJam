@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@class MoodEntry, MoodInputController1;
+@class MoodEntry;
 
 
 @interface MoodInputController2 : UIViewController

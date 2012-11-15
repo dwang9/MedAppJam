@@ -7,9 +7,9 @@
 //
 
 #import "MoodInputController3.h"
-#import "MoodInputController1.h"
 #import "MoodInputController2.h"
 #import "MoodEntry.h"
+#import "MoodTrackerController.h"
 
 @interface MoodInputController3 ()
 
@@ -19,6 +19,7 @@
 
 @synthesize entry;
 @synthesize rootController;
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,10 +42,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
+
 - (IBAction)cancel:(id)sender {
     [rootController dismissModalViewControllerAnimated:YES];
 }
 - (IBAction)back:(id)sender {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+- (IBAction)ok:(id)sender {
+    [self.delegate passEntry: self.entry];
+    
+    [rootController dismissModalViewControllerAnimated:YES];
 }
 @end

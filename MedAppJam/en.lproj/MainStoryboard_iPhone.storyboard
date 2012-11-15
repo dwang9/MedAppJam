@@ -1181,11 +1181,19 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <segue destination="yOZ-5D-eMU" kind="modal" id="Ger-jH-9Z5"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QcS-Tu-CnI">
+                                <rect key="frame" x="62" y="58" width="196" height="183"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="zcr-fV-Wnx" customClass="MoodTracker"/>
                     <connections>
+                        <outlet property="output" destination="QcS-Tu-CnI" id="ELn-Sn-4VW"/>
                         <segue destination="KS6-Zq-Kps" kind="modal" identifier="SetMoodInput1" id="JmA-Ud-fCT"/>
                     </connections>
                 </viewController>
@@ -1390,6 +1398,22 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <rect key="frame" x="0.0" y="44" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sy3-zD-mRH">
+                                <rect key="frame" x="33" y="384" width="255" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.26089425319999998" green="0.35110411349999998" blue="0.15544017739999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ok:" destination="DnS-TI-eq6" eventType="touchUpInside" id="JT2-CH-U4O"/>
+                                    <action selector="ok:" destination="WYK-P8-mR8" eventType="touchUpInside" id="hHB-7o-m1C"/>
+                                </connections>
+                            </button>
                             <navigationBar contentMode="scaleToFill" id="HLZ-5D-hYL">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -1423,18 +1447,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="0.26089425319999998" green="0.35110411349999998" blue="0.15544017739999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rpr-ea-vFU">
-                                <rect key="frame" x="31" y="390" width="255" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="OK">
-                                    <color key="titleColor" red="0.26089425319999998" green="0.35110411349999998" blue="0.15544017739999999" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="wkA-WT-T4z">
                                 <rect key="frame" x="40" y="134" width="240" height="230"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1447,9 +1459,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IiC-Lb-1fC"/>
-                    <connections>
-                        <segue destination="L7o-fy-aaC" kind="modal" id="B14-ip-71P"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i0c-TC-StK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1494,12 +1503,14 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <relationships>
                 <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="ok:"/>
             </relationships>
         </class>
         <class className="MoodTrackerController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MoodTrackerController.h"/>
             <relationships>
                 <relationship kind="action" name="InputInformation:"/>
+                <relationship kind="outlet" name="output" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="Reminder" superclassName="UIViewController">
@@ -1537,7 +1548,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="B14-ip-71P"/>
+        <segue reference="w8P-Td-TfC"/>
         <segue reference="4un-HO-0Lt"/>
         <segue reference="KOX-Cb-ChD"/>
         <segue reference="Rze-Dx-DWG"/>

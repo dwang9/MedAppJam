@@ -8,6 +8,7 @@
 
 #import "MoodTrackerController.h"
 #import "MoodInputController1.h"
+#import "MoodEntry.h"
 
 @interface MoodTrackerController ()
 
@@ -15,6 +16,7 @@
 
 @implementation MoodTrackerController
 
+@synthesize output;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,6 +32,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,8 +54,21 @@
     }
 }
 
+- (void) passEntry: (MoodEntry*) entry;
+{
+    NSMutableArray* array = [[NSMutableArray alloc] init];
+    [array addObject: entry];
+    
+    NSString* string = [NSString stringWithFormat:@"Date: %@", [[[array objectAtIndex: 0] entry ] date]];
+    output.text = string;
+}
+
 - (IBAction)InputInformation:(id)sender {
     [self performSegueWithIdentifier:@"SetMoodInput1" sender: self];
     
+}
+- (void)viewDidUnload {
+    output = nil;
+    [super viewDidUnload];
 }
 @end
