@@ -33,6 +33,7 @@
 		41EB4FE8165075F100404DD0 /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE7165075F100404DD0 /* Book.png */; };
 		41EB4FEA1650767100404DD0 /* Pills.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE91650767100404DD0 /* Pills.png */; };
 		41EB4FF016507AF400404DD0 /* Face.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FEF16507AF400404DD0 /* Face.png */; };
+		4D1477851654904300BD21D5 /* ReminderTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1477841654904300BD21D5 /* ReminderTableViewController.m */; };
 		4D840ABC16503106003C0C8D /* MoodTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D840ABB16503106003C0C8D /* MoodTracker.m */; };
 		4DF617291653518A006BF3F8 /* ResourcesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */; };
 		870BF29C1653590E0077BA75 /* ReminderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF29B1653590E0077BA75 /* ReminderObject.m */; };
@@ -84,6 +85,8 @@
 		41EB4FE7165075F100404DD0 /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
 		41EB4FE91650767100404DD0 /* Pills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pills.png; sourceTree = "<group>"; };
 		41EB4FEF16507AF400404DD0 /* Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Face.png; sourceTree = "<group>"; };
+		4D1477831654904300BD21D5 /* ReminderTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderTableViewController.h; sourceTree = "<group>"; };
+		4D1477841654904300BD21D5 /* ReminderTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderTableViewController.m; sourceTree = "<group>"; };
 		4D840ABA16503106003C0C8D /* MoodTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodTracker.h; sourceTree = "<group>"; };
 		4D840ABB16503106003C0C8D /* MoodTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodTracker.m; sourceTree = "<group>"; };
 		4DF617271653518A006BF3F8 /* ResourcesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourcesTableViewController.h; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 		41D96EE0164FE14C00AFF60F /* MedAppJam */ = {
 			isa = PBXGroup;
 			children = (
+				4D1477831654904300BD21D5 /* ReminderTableViewController.h */,
+				4D1477841654904300BD21D5 /* ReminderTableViewController.m */,
 				870BF29D165359250077BA75 /* ReminderObject.h */,
 				870BF29B1653590E0077BA75 /* ReminderObject.m */,
 				1BA7E5E21650702700C03835 /* Reminder.h */,
@@ -337,6 +342,7 @@
 				1BA7E5E41650702700C03835 /* Reminder.m in Sources */,
 				4DF617291653518A006BF3F8 /* ResourcesTableViewController.m in Sources */,
 				870BF29C1653590E0077BA75 /* ReminderObject.m in Sources */,
+				4D1477851654904300BD21D5 /* ReminderTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,6 +42,8 @@ NSMutableArray *reminders;
         
         //Use it as the first element in the new array
         reminders = [NSArray arrayWithObjects: newReminder, nil];
+        
+        //Now create an actual reminder in the phone
     }
     //Else add a new reminder with the information entered in the fields to the end of the array
     else{
@@ -59,6 +61,8 @@ NSMutableArray *reminders;
         
         //Add it to the end of the array
         [reminders addObject: newReminder];
+        
+        //Now create an actual reminder in the phone
     }
 }
 
@@ -80,6 +84,7 @@ NSMutableArray *reminders;
 }
 
 - (IBAction)timePickerValueChanged:(id)sender {
+    
 }
 
 - (void)viewDidUnload {
