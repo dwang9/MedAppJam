@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ReminderObject.h"
 
 @interface Reminder : UIViewController
 
