@@ -41,4 +41,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)cancel:(id)sender {
+    [rootController dismissModalViewControllerAnimated:YES];
+}
+- (IBAction)back:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
 @end

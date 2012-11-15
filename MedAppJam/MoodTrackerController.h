@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface MoodTrackerController : UIViewController
+{
+    
+}
+- (IBAction)InputInformation:(id)sender;
 
 
 

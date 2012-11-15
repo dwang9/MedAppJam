@@ -7,6 +7,7 @@
 //
 
 #import "MoodTrackerController.h"
+#import "MoodInputController1.h"
 
 @interface MoodTrackerController ()
 
@@ -37,4 +38,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString: @"SetMoodInput1"])
+    {
+        MoodInputController1* controller1 = [segue destinationViewController];
+        
+        controller1.rootController = self;
+        
+        
+    }
+}
+
+- (IBAction)InputInformation:(id)sender {
+    [self performSegueWithIdentifier:@"SetMoodInput1" sender: self];
+    
+}
 @end

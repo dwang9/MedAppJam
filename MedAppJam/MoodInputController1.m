@@ -15,6 +15,7 @@
 @end
 
 @implementation MoodInputController1
+@synthesize rootController;
 @synthesize entry;
 @synthesize datePicker;
 
@@ -65,17 +66,21 @@
         
         // Pass the entry along to the second input screen
         controller2.entry = self.entry;
-        controller2.rootController = self;
+        controller2.rootController = self.rootController;
     }
 }
 
 - (IBAction)cancel:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
+    [rootController dismissModalViewControllerAnimated:YES];
 }
 
 - (IBAction)ok:(id)sender {
     
     [self performSegueWithIdentifier: @"SetMoodInput2" sender:self];
+}
+
+- (IBAction)back:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end

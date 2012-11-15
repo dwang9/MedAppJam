@@ -58,10 +58,13 @@
 }
 
 - (IBAction)cancel:(id)sender {
-    [rootController dismissModalViewControllerAnimated: NO];
-    [self dismissModalViewControllerAnimated:YES];
+    [rootController dismissModalViewControllerAnimated: YES];
 }
 - (IBAction)ok:(id)sender {
     [self performSegueWithIdentifier:@"SetMoodInput3" sender: self];
+}
+
+- (IBAction)back:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
 }
 @end

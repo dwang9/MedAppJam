@@ -14,11 +14,13 @@
 {
 @private
     MoodEntry* entry;
-    MoodInputController1* rootController;
+    UIViewController* rootController;
 }
-- (IBAction)cancel:(id)sender;
-@property (strong, nonatomic) MoodInputController1* rootController;
+
+@property (strong, nonatomic) UIViewController* rootController;
 @property (strong, nonatomic) MoodEntry* entry;
+- (IBAction)cancel:(id)sender;
 - (IBAction)ok:(id)sender;
+- (IBAction)back:(id)sender;
 
 @end
