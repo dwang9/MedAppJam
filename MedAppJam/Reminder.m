@@ -20,8 +20,9 @@
 @synthesize TimeToTake;     //When to take it - Hour, Minute, AM/PM
 @synthesize TableOfReminders;
 
-
 NSMutableArray *reminders;
+
+
 
 - (IBAction)PressAddNewReminder:(UIButton *)sender {
     //Go to Add New Reminder Page
@@ -36,6 +37,7 @@ NSMutableArray *reminders;
         
         newReminder = [newReminder init];
         
+        //Change this to use actual values from the fields/picker
         [newReminder setNameOfMedication: @"Prozac"];
         [newReminder setAmountToTake: @"20 mg"];
         [newReminder setTimeToTake: @"2:00 PM"];
@@ -55,6 +57,7 @@ NSMutableArray *reminders;
         
         newReminder = [newReminder init];
         
+        //Change this to take actual values from the fields/picker
         [newReminder setNameOfMedication: @"Wellbutrin"];
         [newReminder setAmountToTake: @"100 mg"];
         [newReminder setTimeToTake: @"7:00 PM"];
