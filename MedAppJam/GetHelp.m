@@ -17,11 +17,11 @@
 {
     
     
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Test Alert"
-                                                    message:@"Are you sure?"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Call 911?"
+                                                    message:@""
                                                    delegate:self
                                           cancelButtonTitle:@"Cancel"
-                                          otherButtonTitles:@"Yes",nil];
+                                          otherButtonTitles:@"Continue",nil];
     [alert show];
     
 }
