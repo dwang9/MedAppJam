@@ -10,17 +10,27 @@
 
 @implementation Resources
 
-
-@synthesize TextWindow;
-
-- (void) viewDidLoad {
-[TextWindow setText:@"List words or terms separated by commas"];
+- (IBAction)MentalHealthScreeningsButton:(id)sender {
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
 }
 
-- (void)viewDidUnload {
-
-    [self setTextWindow:nil];
-    [super viewDidUnload];
+- (IBAction)NIMHButton:(id)sender {
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
 }
 
+- (IBAction)NIMHDepressionButton:(id)sender {
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+}
+
+- (IBAction)NIMHAnxietyButton:(id)sender {
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+}
+
+- (IBAction)ADAAButton:(id)sender {
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+}
+
+- (IBAction)SAMHSAButton:(id)sender {
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+}
 @end
