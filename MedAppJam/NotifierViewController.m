@@ -10,7 +10,9 @@
 
 @implementation NotifierViewController
 
-@synthesize datePicker,tableview, eventText;
+@synthesize datePicker;
+@synthesize tableview;
+@synthesize eventText;
 
 - (void) viewWillAppear:(BOOL)animated {
 	[self.tableview reloadData];
