@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface Resources : UIViewController
+
+//Each of the buttons on the initial Resources page
 - (IBAction)MentalHealthScreeningsButton:(id)sender;
 - (IBAction)NIMHButton:(id)sender;
 - (IBAction)NIMHDepressionButton:(id)sender;
