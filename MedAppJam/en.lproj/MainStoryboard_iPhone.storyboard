@@ -547,7 +547,7 @@
                                 </state>
                                 <connections>
                                     <action selector="PressCreateNewReminder:" destination="5KW-7D-T51" eventType="touchUpInside" id="6xc-e2-F0d"/>
-                                    <segue destination="K1i-NW-xdS" kind="modal" id="3Hc-0Y-e34"/>
+                                    <segue destination="Gtt-AH-7pl" kind="push" id="MRI-tH-ZEk"/>
                                 </connections>
                             </button>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" id="TuM-s9-8OY">
@@ -594,6 +594,51 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Sx-9F-hnj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1034" y="476"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7g1-Vc-wgD">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DNr-aq-cr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Gtt-AH-7pl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBJ-B9-2bA">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="cF1-ou-LLy">
+                                <rect key="frame" x="209" y="56" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="itp-so-mnG">
+                                <rect key="frame" x="209" y="102" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="2NB-wH-Vgl">
+                                <rect key="frame" x="209" y="148" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Z7w-Sg-P5l">
+                                <rect key="frame" x="209" y="194" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="gtd-ro-AfU">
+                                <rect key="frame" x="209" y="240" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="5Ws-gx-2U5">
+                                <rect key="frame" x="209" y="288" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ql1-om-lfR">
+                                <rect key="frame" x="209" y="336" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cci-sB-vNd"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1409" y="477"/>
         </scene>
         <!--Resources-->
         <scene sceneID="FW2-Ak-AAR">
