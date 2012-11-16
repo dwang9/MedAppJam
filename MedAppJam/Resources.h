@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Resources : UIViewController
-@property (weak, nonatomic) IBOutlet UITextView *TextWindow;
+
 
 
 @end
