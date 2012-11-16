@@ -16,6 +16,7 @@
 - (IBAction)timePickerValueChanged:(id)sender;
 - (IBAction)PressCreateNewReminder:(UIButton *)sender;
 - (IBAction)pressAddReminder:(id)sender;
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
 
 @property (weak, nonatomic) IBOutlet UITextField *MedicationName;
 @property (weak, nonatomic) IBOutlet UITextField *AmountToTake;
