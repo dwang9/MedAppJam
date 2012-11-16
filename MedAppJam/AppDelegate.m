@@ -7,12 +7,34 @@
 // new change test
 
 #import "AppDelegate.h"
+#import "NotifierViewController.h"
 
 @implementation AppDelegate
+
+@synthesize window;
+@synthesize viewController;
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    //
+    //// Add the view controller's view to the window and display.
+    [window addSubview:viewController.view];
+    [window makeKeyAndVisible];
+    
+    application.applicationIconBadgeNumber = 0;
+    
+    // Handle launching from a notification
+    UILocalNotification *localNotif =
+    [launchOptions objectForKey:UIApplicationLaunchOptionsLocalNotificationKey];
+    if (localNotif) {
+        NSLog(@"Recieved Notification %@",localNotif);
+    }
+
+    //
+    //
     return YES;
 }
 							
@@ -41,6 +63,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+//
+//
+//
+
+- (void)application:(UIApplication *)app didReceiveLocalNotification:(UILocalNotification *)notif {
+    // Handle the notificaton when the app is running
+    NSLog(@"Recieved Notification %@",notif);
 }
 
 @end

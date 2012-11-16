@@ -32,9 +32,10 @@
 
 
 - (IBAction)pressAddReminder:(id)sender {
-    
+   //This is just to go to the add a reminder page - not where the reminder is actually created. See PressCreateNewReminder for that.
     
 }
+
 - (IBAction)PressViewExistingReminders:(UIButton *)sender {
     //Go to View Eisting Reminders Page
     
@@ -96,8 +97,6 @@
     }
 
 }
-
-
 
 - (IBAction)timePickerValueChanged:(id)sender {
 

@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class NotifierViewController;
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    UIWindow *window;
+    NotifierViewController *viewController;
+}
+
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain) IBOutlet NotifierViewController *viewController;
 
 @end
