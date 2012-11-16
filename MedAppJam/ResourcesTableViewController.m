@@ -22,8 +22,16 @@
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
     
 }
+- (void)viewDidUnload {
+    [self setGeneralMentalIllness:nil];
+    [self setDepression:nil];
+    [self setAnxietyDisorders:nil];
+    [self setEatingDisorders:nil];
+    [self setSubstanceAbuse:nil];
+    [super viewDidUnload];
+}
 
--(void)generalLink:
+-(void)generalLink:{
+    
+}
 @end
-@end
-

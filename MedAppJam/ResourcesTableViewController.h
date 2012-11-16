@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface ResourcesTableViewController : UITableViewController
-- (IBAction)linkToMental1:(id)sender;
+@property (weak, nonatomic) IBOutlet UITableViewSection *GeneralMentalIllness;
+@property (weak, nonatomic) IBOutlet UITableViewSection *Depression;
+@property (weak, nonatomic) IBOutlet UITableViewSection *AnxietyDisorders;
+@property (weak, nonatomic) IBOutlet UITableViewSection *EatingDisorders;
+@property (weak, nonatomic) IBOutlet UITableViewSection *SubstanceAbuse;
 
 @end
