@@ -40,6 +40,7 @@
 		41EB4FF016507AF400404DD0 /* Face.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FEF16507AF400404DD0 /* Face.png */; };
 		4DF617291653518A006BF3F8 /* ResourcesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */; };
 		870BF29C1653590E0077BA75 /* ReminderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF29B1653590E0077BA75 /* ReminderObject.m */; };
+		878BC5981655FF0F001AF0E5 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 878BC5971655FF0F001AF0E5 /* Resources.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,8 @@
 		4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesTableViewController.m; sourceTree = "<group>"; };
 		870BF29B1653590E0077BA75 /* ReminderObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderObject.m; sourceTree = "<group>"; };
 		870BF29D165359250077BA75 /* ReminderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderObject.h; sourceTree = "<group>"; };
+		878BC5951655FEEE001AF0E5 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
+		878BC5971655FF0F001AF0E5 /* Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resources.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 		41D96EE0164FE14C00AFF60F /* MedAppJam */ = {
 			isa = PBXGroup;
 			children = (
+				878BC5971655FF0F001AF0E5 /* Resources.m */,
+				878BC5951655FEEE001AF0E5 /* Resources.h */,
 				870BF29D165359250077BA75 /* ReminderObject.h */,
 				870BF29B1653590E0077BA75 /* ReminderObject.m */,
 				1BA7E5E21650702700C03835 /* Reminder.h */,
@@ -361,6 +366,7 @@
 				41A6223016538E5B0038D409 /* MoodEntry.m in Sources */,
 				414262B91653A04800EC7F2F /* MoodInputController3.m in Sources */,
 				41E611C416548D470059C11E /* PlotMoodGraph.m in Sources */,
+				878BC5981655FF0F001AF0E5 /* Resources.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
