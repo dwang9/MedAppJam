@@ -11,26 +11,26 @@
 @implementation Resources
 
 - (IBAction)MentalHealthScreeningsButton:(id)sender {
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http://www.mentalhealthscreening.org/screening/?keyword=UCIRVINE"]];
 }
 
 - (IBAction)NIMHButton:(id)sender {
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http://www.nimh.nih.gov/index.shtml"]];
 }
 
 - (IBAction)NIMHDepressionButton:(id)sender {
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http://www.nimh.nih.gov/health/topics/depression/index.shtml"]];
 }
 
 - (IBAction)NIMHAnxietyButton:(id)sender {
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http://www.nimh.nih.gov/health/topics/anxiety-disorders/index.shtml"]];
 }
 
 - (IBAction)ADAAButton:(id)sender {
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http://www.adaa.org/"]];
 }
 
 - (IBAction)SAMHSAButton:(id)sender {
-    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http://www.samhsa.gov/"]];
 }
 @end
