@@ -117,7 +117,7 @@
             <objects>
                 <viewController id="K1i-NW-xdS" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5w5-So-SzI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="pzI-Nz-3oD">
@@ -428,7 +428,7 @@
             <objects>
                 <viewController id="TD7-hW-RCn" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OE-el-sai">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="tZr-Xt-xqK">
@@ -506,9 +506,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="EnteredInfoInMedicationName:" destination="5KW-7D-T51" eventType="editingDidEnd" id="BMZ-X7-k19"/>
-                                </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Amount to Take:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ePh-cE-RBo">
                                 <rect key="frame" x="20" y="91" width="138" height="30"/>
@@ -1464,11 +1461,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="Reminder" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Reminder.h"/>
             <relationships>
-                <relationship kind="action" name="PressAddNewReminder:" candidateClass="UIButton"/>
                 <relationship kind="action" name="PressCreateNewReminder:" candidateClass="UIButton"/>
                 <relationship kind="action" name="PressReturnToMedicationReminders:" candidateClass="UIButton"/>
                 <relationship kind="action" name="PressViewExistingReminders:" candidateClass="UIButton"/>
-                <relationship kind="action" name="addReminder:"/>
                 <relationship kind="action" name="pressAddReminder:"/>
                 <relationship kind="action" name="timePickerValueChanged:"/>
                 <relationship kind="outlet" name="AmountToTake" candidateClass="UITextField"/>
