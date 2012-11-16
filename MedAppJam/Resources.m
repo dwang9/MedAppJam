@@ -10,7 +10,16 @@
 
 @implementation Resources
 
+
+@synthesize TextWindow;
+
+- (void) viewDidLoad {
+[TextWindow setText:@"List words or terms separated by commas"];
+}
+
 - (void)viewDidUnload {
+
+    [self setTextWindow:nil];
     [super viewDidUnload];
 }
 
