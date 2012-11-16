@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "ReminderObject.h"
 
-@interface Reminder : UIViewController
+@interface Reminder : UIViewController <UITextFieldDelegate>
 
 - (IBAction)PressViewExistingReminders:(UIButton *)sender;
 - (IBAction)PressReturnToMedicationReminders:(UIButton *)sender;

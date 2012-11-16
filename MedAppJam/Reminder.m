@@ -101,6 +101,14 @@
 
 }
 
+//this helps the keyboard disappear when the user clicks return
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 - (void)viewDidUnload {
     [self setMedicationName:nil];
     [self setAmountToTake:nil];
