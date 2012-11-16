@@ -19,6 +19,13 @@
 @synthesize AmountToTake;   //The amount to take
 @synthesize TimeToTake;     //When to take it - Hour, Minute, AM/PM
 @synthesize TableOfReminders;
+@synthesize monday;
+@synthesize tuesday;
+@synthesize wednesday;
+@synthesize thursday;
+@synthesize friday;
+@synthesize saturday;
+@synthesize sunday;
 @synthesize reminders;
 
 
@@ -89,6 +96,11 @@
 
 }
 
+- (IBAction)addReminder:(id)sender {
+    
+    
+}
+
 - (IBAction)timePickerValueChanged:(id)sender {
 
 }
@@ -98,6 +110,13 @@
     [self setAmountToTake:nil];
     [self setTimeToTake:nil];
     [self setTableOfReminders:nil];
+    [self setMonday:nil];
+    [self setTuesday:nil];
+    [self setWednesday:nil];
+    [self setThursday:nil];
+    [self setFriday:nil];
+    [self setSaturday:nil];
+    [self setSunday:nil];
     [super viewDidUnload];
 }
 @end

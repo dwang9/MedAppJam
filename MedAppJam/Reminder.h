@@ -16,11 +16,19 @@
 - (IBAction)PressReturnToMedicationReminders:(UIButton *)sender;
 - (IBAction)timePickerValueChanged:(id)sender;
 - (IBAction)PressCreateNewReminder:(UIButton *)sender;
+- (IBAction)addReminder:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *MedicationName;
 @property (weak, nonatomic) IBOutlet UITextField *AmountToTake;
 @property (weak, nonatomic) IBOutlet UIDatePicker *TimeToTake;
 @property (weak, nonatomic) IBOutlet UITableView *TableOfReminders;
+@property (weak, nonatomic) IBOutlet UISwitch *monday;
+@property (weak, nonatomic) IBOutlet UISwitch *tuesday;
+@property (weak, nonatomic) IBOutlet UISwitch *wednesday;
+@property (weak, nonatomic) IBOutlet UISwitch *thursday;
+@property (weak, nonatomic) IBOutlet UISwitch *friday;
+@property (weak, nonatomic) IBOutlet UISwitch *saturday;
+@property (weak, nonatomic) IBOutlet UISwitch *sunday;
 
 @property (weak, nonatomic) NSMutableArray *reminders;
 

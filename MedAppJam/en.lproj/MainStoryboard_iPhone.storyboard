@@ -595,47 +595,131 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="1034" y="476"/>
         </scene>
-        <!--View Controller-->
+        <!--Reminder-->
         <scene sceneID="7g1-Vc-wgD">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNr-aq-cr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="Gtt-AH-7pl" sceneMemberID="viewController">
+                <viewController id="Gtt-AH-7pl" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eBJ-B9-2bA">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="cF1-ou-LLy">
-                                <rect key="frame" x="209" y="56" width="79" height="27"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="hiw-AJ-psU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="cF1-ou-LLy">
+                                <rect key="frame" x="198" y="26" width="79" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.0" green="0.72987085460000001" blue="0.093029590199999998" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="itp-so-mnG">
-                                <rect key="frame" x="209" y="102" width="79" height="27"/>
+                                <rect key="frame" x="198" y="71" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.0" green="0.72987085459183676" blue="0.093029590203159096" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="2NB-wH-Vgl">
-                                <rect key="frame" x="209" y="148" width="79" height="27"/>
+                                <rect key="frame" x="198" y="116" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.0" green="0.72987085459183676" blue="0.11522787274329281" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="Z7w-Sg-P5l">
-                                <rect key="frame" x="209" y="194" width="79" height="27"/>
+                                <rect key="frame" x="198" y="161" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.00068136161460000003" green="0.68741508149999997" blue="0.11498688730000001" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="gtd-ro-AfU">
-                                <rect key="frame" x="209" y="240" width="79" height="27"/>
+                                <rect key="frame" x="198" y="206" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.0" green="0.72987085460000001" blue="0.093029590199999998" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="5Ws-gx-2U5">
-                                <rect key="frame" x="209" y="288" width="79" height="27"/>
+                                <rect key="frame" x="198" y="251" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.0" green="0.72987085460000001" blue="0.093029590199999998" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="ql1-om-lfR">
-                                <rect key="frame" x="209" y="336" width="79" height="27"/>
+                                <rect key="frame" x="198" y="296" width="79" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="onTintColor" red="0.0" green="0.72987085460000001" blue="0.093029590199999998" alpha="1" colorSpace="calibratedRGB"/>
                             </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Monday:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="44L-vm-yDa">
+                                <rect key="frame" x="71" y="29" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tuesday:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="GT8-oh-id9">
+                                <rect key="frame" x="66" y="74" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Wednesday:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Kv4-7W-tJU">
+                                <rect key="frame" x="43" y="119" width="95" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Thursday:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="CLU-qo-Qq7">
+                                <rect key="frame" x="62" y="164" width="76" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Friday:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="CGI-P1-sQW">
+                                <rect key="frame" x="86" y="209" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Saturday:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="icZ-hp-AG6">
+                                <rect key="frame" x="64" y="254" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sunday:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="GwF-0h-77t">
+                                <rect key="frame" x="75" y="299" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="coq-Fd-570">
+                                <rect key="frame" x="46" y="346" width="228" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Add Reminder">
+                                    <color key="titleColor" red="0.00051697565429999995" green="0.52156865600000002" blue="0.087245039979999994" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addReminder:" destination="Gtt-AH-7pl" eventType="touchUpInside" id="Uzc-I5-gDa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="cci-sB-vNd"/>
+                    <connections>
+                        <outlet property="friday" destination="gtd-ro-AfU" id="nYB-RC-nVp"/>
+                        <outlet property="monday" destination="cF1-ou-LLy" id="ct0-mu-qAy"/>
+                        <outlet property="saturday" destination="5Ws-gx-2U5" id="omn-eB-HNc"/>
+                        <outlet property="sunday" destination="ql1-om-lfR" id="YYt-qa-VP3"/>
+                        <outlet property="thursday" destination="Z7w-Sg-P5l" id="DvM-Ee-kvn"/>
+                        <outlet property="tuesday" destination="itp-so-mnG" id="E4c-zg-Pxo"/>
+                        <outlet property="wednesday" destination="2NB-wH-Vgl" id="KbJ-R7-2Fd"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1409" y="477"/>
@@ -1406,11 +1490,19 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="action" name="PressCreateNewReminder:" candidateClass="UIButton"/>
                 <relationship kind="action" name="PressReturnToMedicationReminders:" candidateClass="UIButton"/>
                 <relationship kind="action" name="PressViewExistingReminders:" candidateClass="UIButton"/>
+                <relationship kind="action" name="addReminder:"/>
                 <relationship kind="action" name="timePickerValueChanged:"/>
                 <relationship kind="outlet" name="AmountToTake" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="MedicationName" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="TableOfReminders" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="TimeToTake" candidateClass="UIDatePicker"/>
+                <relationship kind="outlet" name="friday" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="monday" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="saturday" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="sunday" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="thursday" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="tuesday" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="wednesday" candidateClass="UISwitch"/>
             </relationships>
         </class>
         <class className="Resources" superclassName="UIViewController">
