@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ResourcesTableViewController : UITableViewController
+- (IBAction)linkToMental1:(id)sender;
 
 @end

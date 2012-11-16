@@ -10,8 +10,13 @@
 
 @implementation ResourcesTableViewController
 
--(void)pushTable: (NSString *)tableName linkArray:(NSArray *)linkArray{
+
+- (IBAction)linkToMental1:(id)sender {
     
     
 }
+
+-(void)generalLink:
 @end
+@end
+

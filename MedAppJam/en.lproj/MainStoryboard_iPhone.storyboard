@@ -606,30 +606,47 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <sections>
                             <tableViewSection headerTitle="General Mental Illness" id="7M2-mz-sLP" userLabel="GeneralMental">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1Gn-cy-bbS">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="nEX-IO-8Gu">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="SYB-0S-5eC">
-                                                    <rect key="frame" x="20" y="11" width="42" height="21"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kmF-Pt-heL">
+                                                    <rect key="frame" x="-5" y="-6" width="330" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" title="List of Mental Health Disorders">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="linkToMental1:" destination="5mq-9l-I6j" eventType="touchUpInside" id="HdP-1G-vI6"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1Gn-cy-bbS">
+                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="List of Mental Health Disorders" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="SYB-0S-5eC">
+                                                    <rect key="frame" x="20" y="11" width="235" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="nEX-IO-8Gu">
-                                        <rect key="frame" x="0.0" y="66" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
@@ -877,6 +894,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <connections>
                         <outlet property="depressionTable" destination="mXm-ZM-U9p" id="jSn-d3-hlr"/>
                         <outlet property="generalMentalTable" destination="7M2-mz-sLP" id="SvP-Im-7RG"/>
+                        <outlet property="view" destination="1Gn-cy-bbS" id="ceb-it-ce9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVh-tN-EM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1455,76 +1473,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <image name="Pills.png" width="100" height="100"/>
         <image name="Untitled.png" width="320" height="416"/>
     </resources>
-    <classes>
-        <class className="GetHelp" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GetHelp.h"/>
-            <relationships>
-                <relationship kind="action" name="emergencyCall:" candidateClass="UIButton"/>
-                <relationship kind="action" name="nationalCall:" candidateClass="UIButton"/>
-                <relationship kind="action" name="nationalWarmCall:" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="MoodInputController1" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoodInputController1.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="ok:"/>
-                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
-            </relationships>
-        </class>
-        <class className="MoodInputController2" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoodInputController2.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="ok:"/>
-            </relationships>
-        </class>
-        <class className="MoodInputController3" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoodInputController3.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="ok:"/>
-            </relationships>
-        </class>
-        <class className="MoodTrackerController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MoodTrackerController.h"/>
-            <relationships>
-                <relationship kind="action" name="InputInformation:"/>
-                <relationship kind="outlet" name="output" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="Reminder" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Reminder.h"/>
-            <relationships>
-                <relationship kind="action" name="PressAddNewReminder:" candidateClass="UIButton"/>
-                <relationship kind="action" name="PressCreateNewReminder:" candidateClass="UIButton"/>
-                <relationship kind="action" name="PressReturnToMedicationReminders:" candidateClass="UIButton"/>
-                <relationship kind="action" name="PressViewExistingReminders:" candidateClass="UIButton"/>
-                <relationship kind="action" name="timePickerValueChanged:"/>
-                <relationship kind="outlet" name="AmountToTake" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="MedicationName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="TableOfReminders" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="TimeToTake" candidateClass="UIDatePicker"/>
-            </relationships>
-        </class>
-        <class className="Resources" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/Resources.h"/>
-            <relationships>
-                <relationship kind="action" name="pressOK:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="SubstanceAbuse" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="anxietyDisoreders" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="depression" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="eatingDisorders" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="generalmental" candidateClass="UISwitch"/>
-            </relationships>
-        </class>
-        <class className="ResourcesTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ResourcesTableViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
