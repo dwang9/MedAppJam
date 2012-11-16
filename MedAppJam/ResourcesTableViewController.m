@@ -15,7 +15,8 @@
 @synthesize EatingDisorders;
 @synthesize SubstanceAbuse;
 
--(void)pushTable: (NSString *)tableName linkArray:(NSArray *)linkArray{
+
+- (IBAction)linkToMental1:(id)sender {
     
     //Link
     [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
@@ -28,5 +29,9 @@
     [self setEatingDisorders:nil];
     [self setSubstanceAbuse:nil];
     [super viewDidUnload];
+}
+
+-(void)generalLink:{
+    
 }
 @end

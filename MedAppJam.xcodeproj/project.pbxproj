@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BA7E5E016506FE900C03835 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7E5DF16506FE900C03835 /* Resources.m */; };
 		1BA7E5E41650702700C03835 /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7E5E31650702700C03835 /* Reminder.m */; };
 		1BF01C56165044E600D2735F /* GetHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF01C55165044E600D2735F /* GetHelp.m */; };
 		41066CA616502157000214B2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41066CA516502157000214B2 /* .gitignore */; };
@@ -54,8 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BA7E5DE16506FE900C03835 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
-		1BA7E5DF16506FE900C03835 /* Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resources.m; sourceTree = "<group>"; };
 		1BA7E5E21650702700C03835 /* Reminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reminder.h; sourceTree = "<group>"; };
 		1BA7E5E31650702700C03835 /* Reminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reminder.m; sourceTree = "<group>"; };
 		1BF01C54165044E600D2735F /* GetHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHelp.h; sourceTree = "<group>"; };
@@ -165,8 +162,6 @@
 		41D96EE0164FE14C00AFF60F /* MedAppJam */ = {
 			isa = PBXGroup;
 			children = (
-				4D1477831654904300BD21D5 /* ReminderTableViewController.h */,
-				4D1477841654904300BD21D5 /* ReminderTableViewController.m */,
 				870BF29D165359250077BA75 /* ReminderObject.h */,
 				870BF29B1653590E0077BA75 /* ReminderObject.m */,
 				1BA7E5E21650702700C03835 /* Reminder.h */,
@@ -175,8 +170,6 @@
 				4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */,
 				41E611C216548D470059C11E /* PlotMoodGraph.h */,
 				41E611C316548D470059C11E /* PlotMoodGraph.m */,
-				1BA7E5DE16506FE900C03835 /* Resources.h */,
-				1BA7E5DF16506FE900C03835 /* Resources.m */,
 				1BF01C54165044E600D2735F /* GetHelp.h */,
 				1BF01C55165044E600D2735F /* GetHelp.m */,
 				41C6FC1616536F6C005F2BE7 /* MoodTrackerController.h */,
@@ -359,7 +352,6 @@
 				41D96EEB164FE14C00AFF60F /* AppDelegate.m in Sources */,
 				41D96EFA164FE14C00AFF60F /* ViewController.m in Sources */,
 				1BF01C56165044E600D2735F /* GetHelp.m in Sources */,
-				1BA7E5E016506FE900C03835 /* Resources.m in Sources */,
 				1BA7E5E41650702700C03835 /* Reminder.m in Sources */,
 				4DF617291653518A006BF3F8 /* ResourcesTableViewController.m in Sources */,
 				870BF29C1653590E0077BA75 /* ReminderObject.m in Sources */,
