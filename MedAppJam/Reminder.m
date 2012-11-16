@@ -110,6 +110,8 @@
 }
 
 - (void)viewDidUnload {
+    self.MedicationName.delegate = self;
+    self.AmountToTake.delegate = self;
     [self setMedicationName:nil];
     [self setAmountToTake:nil];
     [self setTimeToTake:nil];

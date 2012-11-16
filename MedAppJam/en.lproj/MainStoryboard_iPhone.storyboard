@@ -505,9 +505,9 @@
                                 <rect key="frame" x="203" y="53" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                 <connections>
-                                    <outlet property="delegate" destination="7Sx-9F-hnj" id="bb4-uz-WfA"/>
+                                    <outlet property="delegate" destination="5KW-7D-T51" id="7s1-HL-9L8"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Amount to Take:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ePh-cE-RBo">
@@ -523,7 +523,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <outlet property="delegate" destination="7Sx-9F-hnj" id="xMz-Vx-Xwm"/>
+                                    <outlet property="delegate" destination="5KW-7D-T51" id="4wN-z5-E4V"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="exA-Ae-5gl">
