@@ -11,12 +11,11 @@
 
 @interface Reminder : UIViewController
 
-- (IBAction)PressAddNewReminder:(UIButton *)sender;
 - (IBAction)PressViewExistingReminders:(UIButton *)sender;
 - (IBAction)PressReturnToMedicationReminders:(UIButton *)sender;
 - (IBAction)timePickerValueChanged:(id)sender;
 - (IBAction)PressCreateNewReminder:(UIButton *)sender;
-- (IBAction)addReminder:(id)sender;
+- (IBAction)pressAddReminder:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextField *MedicationName;
 @property (weak, nonatomic) IBOutlet UITextField *AmountToTake;

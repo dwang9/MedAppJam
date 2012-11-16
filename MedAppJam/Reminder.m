@@ -29,11 +29,10 @@
 @synthesize reminders;
 
 
-- (IBAction)PressAddNewReminder:(UIButton *)sender {
-    //Go to Add New Reminder Page
+- (IBAction)pressAddReminder:(id)sender {
     
-    }
-
+    
+}
 - (IBAction)PressViewExistingReminders:(UIButton *)sender {
     //Go to View Eisting Reminders Page
     
@@ -96,10 +95,7 @@
 
 }
 
-- (IBAction)addReminder:(id)sender {
-    
-    
-}
+
 
 - (IBAction)timePickerValueChanged:(id)sender {
 
