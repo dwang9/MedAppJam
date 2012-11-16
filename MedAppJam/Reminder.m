@@ -18,7 +18,9 @@
 @synthesize MedicationName; //The name of the medication
 @synthesize AmountToTake;   //The amount to take
 @synthesize TimeToTake;     //When to take it - Hour, Minute, AM/PM
+//The table that will be displayed to the user if he chooses to view existing reminders
 @synthesize TableOfReminders;
+//Days of the week - the user will be able to specify if he only wants the reminder to occur on certain days
 @synthesize monday;
 @synthesize tuesday;
 @synthesize wednesday;
