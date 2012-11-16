@@ -159,7 +159,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="PressAddNewReminder:" destination="K1i-NW-xdS" eventType="touchUpInside" id="L43-hm-CJz"/>
                                     <segue destination="5KW-7D-T51" kind="push" id="ZaE-mu-7jW"/>
                                 </connections>
                             </button>
