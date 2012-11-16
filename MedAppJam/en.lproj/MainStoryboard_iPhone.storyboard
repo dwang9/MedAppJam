@@ -70,7 +70,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5mq-9l-I6j" kind="push" id="RJC-kV-zIl"/>
+                                    <segue destination="G9c-p0-Wfv" kind="push" id="cS9-q3-DS2"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U8D-EQ-RlW">
@@ -117,7 +117,7 @@
             <objects>
                 <viewController id="K1i-NW-xdS" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5w5-So-SzI">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="pzI-Nz-3oD">
@@ -429,7 +429,7 @@
             <objects>
                 <viewController id="TD7-hW-RCn" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OE-el-sai">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="tZr-Xt-xqK">
@@ -460,7 +460,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="h2E-9U-05H">
-                                <rect key="frame" x="20" y="53" width="280" height="329"/>
+                                <rect key="frame" x="20" y="53" width="280" height="285"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -481,7 +481,7 @@
             <objects>
                 <viewController id="5KW-7D-T51" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dC9-DH-uSj">
-                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="Bv1-U8-w5B">
@@ -631,6 +631,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <accessibility key="accessibilityConfiguration" label="Bleh"/>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1Gn-cy-bbS">
                                         <rect key="frame" x="0.0" y="66" width="320" height="44"/>
@@ -892,6 +893,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </tableView>
                     <navigationItem key="navigationItem" id="Ahq-ub-i9d"/>
                     <connections>
+                        <outlet property="AnxietyDisorders" destination="9TZ-St-2lL" id="8xx-7W-fmY"/>
+                        <outlet property="Depression" destination="mXm-ZM-U9p" id="gkN-0w-yKK"/>
+                        <outlet property="EatingDisorders" destination="GY6-0w-hOj" id="0er-XZ-LgG"/>
+                        <outlet property="GeneralMentalIllness" destination="7M2-mz-sLP" id="97i-VF-RkA"/>
+                        <outlet property="SubstanceAbuse" destination="uTA-hI-9rS" id="08Z-jn-fVU"/>
                         <outlet property="depressionTable" destination="mXm-ZM-U9p" id="jSn-d3-hlr"/>
                         <outlet property="generalMentalTable" destination="7M2-mz-sLP" id="SvP-Im-7RG"/>
                         <outlet property="view" destination="1Gn-cy-bbS" id="ceb-it-ce9"/>
@@ -900,6 +906,30 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GVh-tN-EM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="475" y="1037"/>
+        </scene>
+        <!--Resources-->
+        <scene sceneID="FW2-Ak-AAR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KrX-Ah-1HD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="G9c-p0-Wfv" customClass="Resources" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nAh-fD-mpc">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Resources" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fNZ-8p-hzl">
+                                <rect key="frame" x="102" y="0.0" width="116" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.26089425319999998" green="0.35110411349999998" blue="0.15544017739999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="25o-Uq-m3W"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="475" y="469"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="zCF-Qh-Tw5">
@@ -1479,9 +1509,8 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="3Hc-0Y-e34"/>
+        <segue reference="bds-2l-b5f"/>
         <segue reference="sI1-jg-ztH"/>
         <segue reference="KOX-Cb-ChD"/>
-        <segue reference="UAM-l7-krV"/>
     </inferredMetricsTieBreakers>
 </document>

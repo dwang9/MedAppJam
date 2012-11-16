@@ -9,10 +9,17 @@
 #import "ResourcesTableViewController.h"
 
 @implementation ResourcesTableViewController
+@synthesize GeneralMentalIllness;
+@synthesize Depression;
+@synthesize AnxietyDisorders;
+@synthesize EatingDisorders;
+@synthesize SubstanceAbuse;
 
 
 - (IBAction)linkToMental1:(id)sender {
     
+    //Link
+    [[UIApplication sharedApplication] openURL: [NSURL URLWithString: @"http:www.google.com"]];
     
 }
 
