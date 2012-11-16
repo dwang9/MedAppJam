@@ -19,6 +19,7 @@
 @property (nonatomic, retain) IBOutlet UITextField *eventText;
 
 - (IBAction) scheduleAlarm:(id) sender;
+- (BOOL)textFieldShouldReturn:(UITextField *)textField;
 
 @end
 
