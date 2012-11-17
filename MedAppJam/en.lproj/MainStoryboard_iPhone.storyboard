@@ -265,7 +265,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="377" y="457"/>
+            <point key="canvasLocation" x="475" y="476"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="a5L-le-YQc">
@@ -1562,7 +1562,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="action" name="scheduleAlarm:"/>
                 <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
                 <relationship kind="outlet" name="eventText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="tableview" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="Reminder" superclassName="UIViewController">
