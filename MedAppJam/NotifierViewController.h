@@ -2,8 +2,8 @@
 //  NotifierViewController.h
 //  Notifier
 //
-//  Created by Brandon Trebitowski on 7/29/10.
-//  Copyright RightSprite 2010. All rights reserved.
+//  Created by acebula on 11/16/12.
+//  Copyright (c) 2012 AppJam. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

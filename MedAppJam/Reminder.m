@@ -29,6 +29,11 @@
 @synthesize saturday;
 @synthesize sunday;
 @synthesize reminders;
+@synthesize tableview;
+
+- (void) viewWillAppear:(BOOL)animated {
+    [self.tableview reloadData];
+}
 
 
 - (IBAction)pressAddReminder:(id)sender {
@@ -39,14 +44,38 @@
 - (IBAction)PressViewExistingReminders:(UIButton *)sender {
     //Go to View Eisting Reminders Page
     
-    //If no reminders already exist, the table will be empty
-    if([reminders count] == 0){
-        
+    //Display table w/ existing reminders
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Return the number of rows in the section.
+    return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    static NSString *CellIdentifier = @"Cell";
+
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
-    //Else the table will list each existing reminder
-    else{
-        
-    }
+
+    // Configure the cell...
+
+	NSArray *notificationArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
+	UILocalNotification *notif = [notificationArray objectAtIndex:indexPath.row];
+
+    [cell.textLabel setText:notif.alertBody];
+	[cell.detailTextLabel setText:[notif.fireDate description]];
+
+    return cell;
 }
 
 - (IBAction)PressReturnToMedicationReminders:(UIButton *)sender {
@@ -124,6 +153,7 @@
     [self setFriday:nil];
     [self setSaturday:nil];
     [self setSunday:nil];
+    tableview = nil;
     [super viewDidUnload];
 }
 @end

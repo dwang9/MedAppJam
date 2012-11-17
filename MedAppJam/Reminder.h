@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "ReminderObject.h"
 
-@interface Reminder : UIViewController <UITextFieldDelegate>
+@interface Reminder : UIViewController <UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate>{
+    IBOutlet UITableView *tableview;
+}
 
 - (IBAction)PressViewExistingReminders:(UIButton *)sender;
 - (IBAction)PressReturnToMedicationReminders:(UIButton *)sender;
@@ -29,6 +31,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *friday;
 @property (weak, nonatomic) IBOutlet UISwitch *saturday;
 @property (weak, nonatomic) IBOutlet UISwitch *sunday;
+@property (nonatomic, retain) IBOutlet UITableView *tableview;
 
 @property (weak, nonatomic) NSMutableArray *reminders;
 

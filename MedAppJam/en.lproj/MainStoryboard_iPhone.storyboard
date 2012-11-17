@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="LSX-KV-72n">
-                                <rect key="frame" x="0.0" y="-51" width="320" height="467"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Main Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5uR-bt-jjM">
@@ -117,7 +117,7 @@
             <objects>
                 <viewController id="K1i-NW-xdS" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5w5-So-SzI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="pzI-Nz-3oD">
@@ -181,7 +181,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dj5-pq-suT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Z5L-Mr-fRI" customClass="NotifierViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ruV-8Q-pvF">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="gwK-N7-5MV">
@@ -520,7 +520,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <viewController id="TD7-hW-RCn" customClass="Reminder" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OE-el-sai">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="tZr-Xt-xqK">
@@ -547,7 +547,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </state>
                                 <connections>
                                     <action selector="PressReturnToMedicationReminders:" destination="TD7-hW-RCn" eventType="touchUpInside" id="YSE-vH-VxE"/>
-                                    <segue destination="K1i-NW-xdS" kind="modal" id="4un-HO-0Lt"/>
+                                    <segue destination="K1i-NW-xdS" kind="push" id="Ns5-2k-Jg9"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="h2E-9U-05H">
@@ -561,6 +561,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <navigationItem key="navigationItem" id="EXe-p2-L5M"/>
                     <connections>
                         <outlet property="TableOfReminders" destination="h2E-9U-05H" id="kvJ-C1-HWz"/>
+                        <outlet property="tableview" destination="h2E-9U-05H" id="fYO-Xx-hrq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0b-ra-nhQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1580,6 +1581,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 <relationship kind="outlet" name="monday" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="saturday" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="sunday" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="tableview" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="thursday" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="tuesday" candidateClass="UISwitch"/>
                 <relationship kind="outlet" name="wednesday" candidateClass="UISwitch"/>
@@ -1603,9 +1605,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="m1P-OI-8Fr"/>
         <segue reference="sI1-jg-ztH"/>
         <segue reference="cS9-q3-DS2"/>
         <segue reference="jiI-9M-3Vz"/>
+        <segue reference="Ns5-2k-Jg9"/>
     </inferredMetricsTieBreakers>
 </document>
