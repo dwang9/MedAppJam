@@ -11,11 +11,11 @@
 @implementation NotifierViewController
 
 @synthesize datePicker;
-@synthesize tableview;
+//@synthesize tableview;
 @synthesize eventText;
 
 - (void) viewWillAppear:(BOOL)animated {
-	[self.tableview reloadData];
+//	[self.tableview reloadData];
 }
 
 - (IBAction) scheduleAlarm:(id) sender {
@@ -64,44 +64,44 @@
 	// Schedule the notification
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
 	
-	[self.tableview reloadData];
+//	[self.tableview reloadData];
 }
 
 #pragma mark -
 #pragma mark Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
-    return 1;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    // Return the number of sections.
+//    return 1;
+//}
 
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
-    return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
-}
+//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+//    // Return the number of rows in the section.
+//    return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
+//}
 
 
-// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    static NSString *CellIdentifier = @"Cell";
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
-    
-    // Configure the cell...
-    
-	NSArray *notificationArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
-	UILocalNotification *notif = [notificationArray objectAtIndex:indexPath.row];
-	
-    [cell.textLabel setText:notif.alertBody];
-	[cell.detailTextLabel setText:[notif.fireDate description]];
-	
-    return cell;
-}
+//// Customize the appearance of table view cells.
+//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+//
+//    static NSString *CellIdentifier = @"Cell";
+//
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+//    if (cell == nil) {
+//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+//    }
+//
+//    // Configure the cell...
+//
+//	NSArray *notificationArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
+//	UILocalNotification *notif = [notificationArray objectAtIndex:indexPath.row];
+//
+//    [cell.textLabel setText:notif.alertBody];
+//	[cell.detailTextLabel setText:[notif.fireDate description]];
+//
+//    return cell;
+//}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -118,7 +118,7 @@
 
 - (void)viewDidUnload {
 	datePicker = nil;
-	tableview = nil;
+//	tableview = nil;
 	eventText = nil;
 }
 
