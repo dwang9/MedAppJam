@@ -8,22 +8,25 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MoodInputController3.h"
+
 @class MoodEntry;
 
-@protocol MoodInputDelegate <NSObject>
-- (void) passEntry: (MoodEntry*) entry;
-@end
-
-@interface MoodTrackerController : UIViewController
+@interface MoodTrackerController : UIViewController <MoodInputDelegate>
 {
-    @private
+@private
     IBOutlet UILabel *output;
+    NSArray* arrayOfEntries;
+    NSUserDefaults* userDefault;
 
     
 }
 
 @property (strong, nonatomic) IBOutlet UILabel *output;
+@property (strong, nonatomic) NSArray* arrayOfEntries;
+
 - (IBAction)InputInformation:(id)sender;
+- (void) passEntry: (MoodEntry*) entry;
 
 
 

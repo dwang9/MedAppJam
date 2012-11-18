@@ -18,6 +18,7 @@
 @implementation MoodTrackerController
 
 @synthesize output;
+@synthesize arrayOfEntries;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -60,16 +61,23 @@
     NSMutableArray* array = [[NSMutableArray alloc] init];
     [array addObject: entry];
     
-    NSString* string = [NSString stringWithFormat:@"Date: %@", [[[array objectAtIndex: 0] entry ] date]];
+    
+    output.numberOfLines = 10;
+    NSString* string = [NSString stringWithFormat:@"Date: %@, Mood %d, Notes, %@", entry.date, entry.mood, entry.notes];
     output.text = string;
 }
+
+- (void)viewDidUnload {
+    output = nil;
+    [super viewDidUnload];
+}
+
 
 - (IBAction)InputInformation:(id)sender {
     [self performSegueWithIdentifier:@"SetMoodInput1" sender: self];
     
 }
-- (void)viewDidUnload {
-    output = nil;
-    [super viewDidUnload];
-}
+
+
+
 @end
