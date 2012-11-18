@@ -40,7 +40,7 @@
 		41EB4FE8165075F100404DD0 /* Book.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE7165075F100404DD0 /* Book.png */; };
 		41EB4FEA1650767100404DD0 /* Pills.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE91650767100404DD0 /* Pills.png */; };
 		41EB4FF016507AF400404DD0 /* Face.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FEF16507AF400404DD0 /* Face.png */; };
-		41F054C9165998E200C94ED0 /* CPDScatterPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F054C7165998E200C94ED0 /* CPDScatterPlotViewController.m */; };
+		41F054D71659A1B800C94ED0 /* CPDScatterPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F054D61659A1B800C94ED0 /* CPDScatterPlotViewController.m */; };
 		4DF617291653518A006BF3F8 /* ResourcesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */; };
 		8703B7D91656FCE000086439 /* NotifierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8703B7D81656FCE000086439 /* NotifierViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		878BC5981655FF0F001AF0E5 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 878BC5971655FF0F001AF0E5 /* Resources.m */; };
@@ -186,8 +186,8 @@
 		41EB4FE7165075F100404DD0 /* Book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Book.png; sourceTree = "<group>"; };
 		41EB4FE91650767100404DD0 /* Pills.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pills.png; sourceTree = "<group>"; };
 		41EB4FEF16507AF400404DD0 /* Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Face.png; sourceTree = "<group>"; };
-		41F054C7165998E200C94ED0 /* CPDScatterPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDScatterPlotViewController.m; sourceTree = "<group>"; };
-		41F054C8165998E200C94ED0 /* CPDScatterPlotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDScatterPlotViewController.h; sourceTree = "<group>"; };
+		41F054D51659A1B800C94ED0 /* CPDScatterPlotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDScatterPlotViewController.h; sourceTree = "<group>"; };
+		41F054D61659A1B800C94ED0 /* CPDScatterPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDScatterPlotViewController.m; sourceTree = "<group>"; };
 		4DF617271653518A006BF3F8 /* ResourcesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourcesTableViewController.h; sourceTree = "<group>"; };
 		4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesTableViewController.m; sourceTree = "<group>"; };
 		8703B7D71656FCE000086439 /* NotifierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifierViewController.h; sourceTree = "<group>"; };
@@ -362,10 +362,10 @@
 				41C6FC1616536F6C005F2BE7 /* MoodTrackerController.h */,
 				41C6FC1716536F6C005F2BE7 /* MoodTrackerController.m */,
 				41C6FC1216536F35005F2BE7 /* MoodInputController1.h */,
+				41F054D51659A1B800C94ED0 /* CPDScatterPlotViewController.h */,
+				41F054D61659A1B800C94ED0 /* CPDScatterPlotViewController.m */,
 				41C6FC1316536F35005F2BE7 /* MoodInputController1.m */,
 				41A622231653793B0038D409 /* MoodInputController2.h */,
-				41F054C7165998E200C94ED0 /* CPDScatterPlotViewController.m */,
-				41F054C8165998E200C94ED0 /* CPDScatterPlotViewController.h */,
 				41CE3CE216589FBC00F6D511 /* CPDStockPriceStore.h */,
 				41CE3CE316589FBC00F6D511 /* CPDStockPriceStore.m */,
 				41A622241653793B0038D409 /* MoodInputController2.m */,
@@ -577,7 +577,7 @@
 			files = (
 				41D96F0F164FE14C00AFF60F /* MedAppJamTests.m in Sources */,
 				41CE3CE416589FBC00F6D511 /* CPDStockPriceStore.m in Sources */,
-				41F054C9165998E200C94ED0 /* CPDScatterPlotViewController.m in Sources */,
+				41F054D71659A1B800C94ED0 /* CPDScatterPlotViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
