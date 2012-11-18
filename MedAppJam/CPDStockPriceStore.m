@@ -82,18 +82,7 @@
 
 - (NSArray *)weeklyPrices:(NSString *)tickerSymbol
 {
-    if ([CPDTickerSymbolAAPL isEqualToString:[tickerSymbol uppercaseString]] == YES)
-    {
-        return [self weeklyAaplPrices];
-    }
-    else if ([CPDTickerSymbolGOOG isEqualToString:[tickerSymbol uppercaseString]] == YES)
-    {
-        return [self weeklyGoogPrices];
-    }
-    else if ([CPDTickerSymbolMSFT isEqualToString:[tickerSymbol uppercaseString]] == YES)
-    {
-        return [self weeklyMsftPrices];
-    }
+    
     return [NSArray array];
 }
 
@@ -130,19 +119,7 @@
 
 - (NSArray *)monthlyPrices:(NSString *)tickerSymbol
 {
-    if ([CPDTickerSymbolAAPL isEqualToString:[tickerSymbol uppercaseString]] == YES)
-    {
         return [self monthlyAaplPrices];
-    }
-    else if ([CPDTickerSymbolGOOG isEqualToString:[tickerSymbol uppercaseString]] == YES)
-    {
-        return [self monthlyGoogPrices];
-    }
-    else if ([CPDTickerSymbolMSFT isEqualToString:[tickerSymbol uppercaseString]] == YES)
-    {
-        return [self monthlyMsftPrices];
-    }
-    return [NSArray array];
 }
 
 #pragma mark - Private behavior
