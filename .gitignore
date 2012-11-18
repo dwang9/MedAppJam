@@ -2,3 +2,7 @@
 *.xcuserstate
 
 *.xcuserstate
+
+.DS_Store
+
+MedAppJam.xcodeproj/project.xcworkspace/xcuserdata/AppJam.xcuserdatad/UserInterfaceState.xcuserstate
