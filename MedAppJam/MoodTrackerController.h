@@ -16,11 +16,15 @@
 {
 @private
     IBOutlet UILabel *output;
+    NSArray* arrayOfEntries;
+    NSUserDefaults* userDefault;
 
     
 }
 
 @property (strong, nonatomic) IBOutlet UILabel *output;
+@property (strong, nonatomic) NSArray* arrayOfEntries;
+
 - (IBAction)InputInformation:(id)sender;
 - (void) passEntry: (MoodEntry*) entry;
 

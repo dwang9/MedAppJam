@@ -17,16 +17,18 @@
 - (void) passEntry: (MoodEntry*) entry;
 @end
 
-@interface MoodInputController3 : UIViewController
+@interface MoodInputController3 : UIViewController <UITextFieldDelegate>
 {
 @private
     MoodEntry* entry;
     UIViewController* rootController;
+    IBOutlet UITextView *notesInput;
 }
 
 @property (weak, nonatomic) id <MoodInputDelegate> delegate;
 @property (strong, nonatomic) MoodEntry* entry;
 @property (strong, nonatomic) UIViewController* rootController;
+@property (strong, nonatomic) IBOutlet UITextView *notesInput;
 - (IBAction)cancel:(id)sender;
 - (IBAction)back:(id)sender;
 - (IBAction)ok:(id)sender;

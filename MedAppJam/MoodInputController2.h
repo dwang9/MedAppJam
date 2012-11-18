@@ -18,11 +18,14 @@
     MoodEntry* entry;
     MoodTrackerController* rootController;
     IBOutlet UIPickerView *moodSelector;
+    NSArray* moodSelectorArray;
 }
+
 
 @property (strong, nonatomic) UIViewController* rootController;
 @property (strong, nonatomic) MoodEntry* entry;
 @property (strong, nonatomic) IBOutlet UIPickerView *moodSelector;
+@property (strong, nonatomic) NSArray* moodSelectorArray;
 - (IBAction)cancel:(id)sender;
 - (IBAction)ok:(id)sender;
 - (IBAction)back:(id)sender;

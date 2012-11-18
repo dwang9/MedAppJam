@@ -61,9 +61,12 @@
         // Create a new instance of MoodEntry
         MoodEntry* newEntry = [[MoodEntry alloc] init];
         self.entry = newEntry;
-        
-        entry.date = datePicker.date;
-        NSLog(@"%@", entry.date);
+
+        unsigned int dateOnly = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+        NSCalendar* calendar = [NSCalendar currentCalendar];
+        NSDateComponents* components = [calendar components:dateOnly fromDate:datePicker.date];
+        components.timeZone = [NSTimeZone timeZoneWithAbbreviation: @"UTC"];
+        entry.date = [calendar dateFromComponents:components];
 
         
         // Pass the entry along to the second input screen

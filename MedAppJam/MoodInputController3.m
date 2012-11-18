@@ -19,6 +19,7 @@
 @synthesize entry;
 @synthesize rootController;
 @synthesize delegate;
+@synthesize notesInput;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +34,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.notesInput.delegate = (id) self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,8 +43,15 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    
+    return YES;
+}
 
 - (IBAction)cancel:(id)sender {
     [rootController dismissModalViewControllerAnimated:YES];
@@ -53,9 +62,13 @@
 
 - (IBAction)ok:(id)sender {
 
-   
+    entry.notes = notesInput.text;
     
     [rootController dismissModalViewControllerAnimated:YES];
     [self.delegate passEntry: self.entry];
+}
+- (void)viewDidUnload {
+    notesInput = nil;
+    [super viewDidUnload];
 }
 @end
