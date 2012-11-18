@@ -38,21 +38,22 @@
 
 
 - (IBAction)pressAddReminder:(id)sender {
-   //This is just to go to the add a reminder page - not where the reminder is actually created. See PressCreateNewReminder for that.
-    
+   //This is just to go to the add a reminder page - not where the reminder is actually created.
 }
 
 - (IBAction)PressViewExistingReminders:(UIButton *)sender {
     //Go to View Eisting Reminders Page
-    
-    //Display table w/ existing reminders
 }
 
+
+//About the View Existing Reminders Table...
+//There should be only one section in the table for the reminders
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
     return 1;
 }
 
+//The number of rows should be equal to the number of notificaitons in the system
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
     return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
@@ -64,16 +65,23 @@
     static NSString *CellIdentifier = @"Cell";
 
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    //Set how the cell looks if it's "empty"
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
 
     // Configure the cell...
 
+    //Link the array of notifications in the system to the table
+    //Localise the array of notifications from the system...
 	NSArray *notificationArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
+    //Get the information for the notification at this "row" (in this method's arguments)
 	UILocalNotification *notif = [notificationArray objectAtIndex:indexPath.row];
 
+    //Set the info
     [cell.textLabel setText:notif.alertBody];
+    //Set the sub-info
 	[cell.detailTextLabel setText:[notif.fireDate description]];
 
     return cell;
@@ -84,47 +92,48 @@
 }
 
 
+//Not using this page anymore...
 - (IBAction)PressCreateNewReminder:(UIButton *)sender {
-    //If no reminders already exist, then create the array of reminders with the information entered in the fields as the first value
-    if([reminders count] == 0){
-        //Create new reminder
-        
-        ReminderObject *newReminder;
-        
-        newReminder = [ReminderObject alloc];
-        
-        newReminder = [newReminder init];
-        
-        //Change this to use actual values from the fields/picker
-        [newReminder setNameOfMedication: @"Prozac"];
-        [newReminder setAmountToTake: @"20 mg"];
-        [newReminder setTimeToTake: @"2:00 PM"];
-        
-        //Use it as the first element in the new array
-        reminders = [NSArray arrayWithObjects: newReminder, nil];
-        
-        //Now create an actual reminder in the phone
-    }
-    //Else add a new reminder with the information entered in the fields to the end of the array
-    else{
-        //Create new reminder
-        
-        ReminderObject *newReminder;
-        
-        newReminder = [ReminderObject alloc];
-        
-        newReminder = [newReminder init];
-        
-        //Change this to take actual values from the fields/picker
-        [newReminder setNameOfMedication: @"Wellbutrin"];
-        [newReminder setAmountToTake: @"100 mg"];
-        [newReminder setTimeToTake: @"7:00 PM"];
-        
-        //Add it to the end of the array
-        [reminders addObject: newReminder];
-        
-        //Now create an actual reminder in the phone
-    }
+//    //If no reminders already exist, then create the array of reminders with the information entered in the fields as the first value
+//    if([reminders count] == 0){
+//        //Create new reminder
+//        
+//        ReminderObject *newReminder;
+//        
+//        newReminder = [ReminderObject alloc];
+//        
+//        newReminder = [newReminder init];
+//        
+//        //Change this to use actual values from the fields/picker
+//        [newReminder setNameOfMedication: @"Prozac"];
+//        [newReminder setAmountToTake: @"20 mg"];
+//        [newReminder setTimeToTake: @"2:00 PM"];
+//        
+//        //Use it as the first element in the new array
+//        reminders = [NSArray arrayWithObjects: newReminder, nil];
+//        
+//        //Now create an actual reminder in the phone
+//    }
+//    //Else add a new reminder with the information entered in the fields to the end of the array
+//    else{
+//        //Create new reminder
+//        
+//        ReminderObject *newReminder;
+//        
+//        newReminder = [ReminderObject alloc];
+//        
+//        newReminder = [newReminder init];
+//        
+//        //Change this to take actual values from the fields/picker
+//        [newReminder setNameOfMedication: @"Wellbutrin"];
+//        [newReminder setAmountToTake: @"100 mg"];
+//        [newReminder setTimeToTake: @"7:00 PM"];
+//        
+//        //Add it to the end of the array
+//        [reminders addObject: newReminder];
+//        
+//        //Now create an actual reminder in the phone
+//    }
 
 }
 
@@ -132,7 +141,7 @@
 
 }
 
-//this helps the keyboard disappear when the user clicks return
+//This helps the keyboard disappear when the user clicks return
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
