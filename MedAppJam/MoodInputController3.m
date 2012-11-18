@@ -8,9 +8,7 @@
 //
 
 #import "MoodInputController3.h"
-#import "MoodInputController2.h"
 #import "MoodEntry.h"
-#import "MoodTrackerController.h"
 
 @interface MoodInputController3 ()
 
@@ -54,8 +52,10 @@
 }
 
 - (IBAction)ok:(id)sender {
-    [self.delegate passEntry: self.entry];
+
+   
     
     [rootController dismissModalViewControllerAnimated:YES];
+    [self.delegate passEntry: self.entry];
 }
 @end

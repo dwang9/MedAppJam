@@ -10,6 +10,7 @@
 #import "MoodInputController2.h"
 #import "MoodInputController3.h"
 #import "MoodEntry.h"
+#import "MoodTrackerController.h"
 
 @interface MoodInputController2 ()
 
@@ -18,6 +19,7 @@
 @implementation MoodInputController2
 @synthesize entry;
 @synthesize rootController;
+@synthesize moodSelector;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,6 +34,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +44,7 @@
 }
 
 - (void)viewDidUnload {
+    moodSelector = nil;
     [super viewDidUnload];
 }
 

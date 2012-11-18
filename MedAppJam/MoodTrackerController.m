@@ -60,8 +60,12 @@
     NSMutableArray* array = [[NSMutableArray alloc] init];
     [array addObject: entry];
     
-    NSString* string = [NSString stringWithFormat:@"Date: %@", [[[array objectAtIndex: 0] entry ] date]];
-    output.text = string;
+    NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+    [dateFormat setDateFormat:@"EEEE MMMM d, YYYY"];
+    NSString *dateString = [dateFormat stringFromDate:entry.date];
+    
+    output.numberOfLines = 4;
+    output.text = dateString;
 }
 
 - (IBAction)InputInformation:(id)sender {

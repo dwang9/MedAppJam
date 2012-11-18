@@ -1169,6 +1169,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     </view>
                     <navigationItem key="navigationItem" id="SJS-2r-unT"/>
                     <connections>
+                        <outlet property="moodSelector" destination="DIy-P8-YVC" id="B1h-ny-Y3y"/>
                         <segue destination="DnS-TI-eq6" kind="modal" identifier="SetMoodInput3" id="EX1-H2-OfQ"/>
                     </connections>
                 </viewController>

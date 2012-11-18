@@ -10,6 +10,7 @@
 #import "MoodInputController1.h"
 #import "MoodInputController2.h"
 #import "MoodEntry.h"
+#import "MoodTrackerController.h"
 
 @interface MoodInputController1 ()
 

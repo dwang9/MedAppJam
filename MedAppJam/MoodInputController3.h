@@ -8,22 +8,23 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MoodTrackerController.h"
 
-@class MoodEntry;
 
-@protocol MoodInputDelegate;
+@class MoodEntry, MoodTrackerController;
 
-@interface MoodInputController3 : UIViewController <MoodInputDelegate>
+@protocol MoodInputDelegate
+@required
+- (void) passEntry: (MoodEntry*) entry;
+@end
+
+@interface MoodInputController3 : UIViewController
 {
 @private
     MoodEntry* entry;
     UIViewController* rootController;
-    id <MoodInputDelegate> delegate;
 }
 
-
-@property (strong, nonatomic) id <MoodInputDelegate> delegate;
+@property (weak, nonatomic) id <MoodInputDelegate> delegate;
 @property (strong, nonatomic) MoodEntry* entry;
 @property (strong, nonatomic) UIViewController* rootController;
 - (IBAction)cancel:(id)sender;

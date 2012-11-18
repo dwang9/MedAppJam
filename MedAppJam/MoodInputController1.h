@@ -8,13 +8,13 @@
 //
 
 #import <UIKit/UIKit.h>
-@class MoodEntry;
+@class MoodEntry, MoodTrackerController;
 
 @interface MoodInputController1 : UIViewController
 {
 @private
     MoodEntry* entry;
-    UIViewController* rootController;
+    MoodTrackerController* rootController;
     IBOutlet UIDatePicker *datePicker;
 }
 
