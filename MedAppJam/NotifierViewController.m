@@ -97,11 +97,22 @@
 	NSArray *notificationArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
 	UILocalNotification *notif = [notificationArray objectAtIndex:indexPath.row];
 	
-    [cell.textLabel setText:notif.alertBody];
-	[cell.detailTextLabel setText:[notif.fireDate description]];
-	
+    NSString *date1 = notif.fireDate.description;//[notif.fireDate.description subStringWithRange:NSMakeRange(5, 10)];
+    NSString *time1 = notif.fireDate.description;//[notif.fireDate.description subStringWithRange:NSMakeRange(12, 17)];
+    //NSLog([date1 subStringWithRange:NSMakeRange(5, 10)]);
+    date1=[date1 substringWithRange:NSMakeRange(5,6)];
+    time1=[time1 substringWithRange:NSMakeRange(11,12)];
+           
+    [cell.textLabel setText:[NSString stringWithFormat:@"%@, %@, %@",notif.alertBody,date1,time1]];
     return cell;
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    return YES;
+}	
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -109,6 +120,7 @@
 }
 
 - (void)viewDidUnload {
+    eventText.delegate = self;
 	datePicker = nil;
 	tableview = nil;
 	eventText = nil;
