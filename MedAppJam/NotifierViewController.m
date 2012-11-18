@@ -2,21 +2,18 @@
 //  NotifierViewController.m
 //  Notifier
 //
-//  Created by acebula on 11/16/12.
-//  Property of Jesse Puente, Milin Shah, Anna Cebula, Derek Wang, and Tom Brown.
-//  Copyright (c) 2012 AppJam. All rights reserved.
+//  Created by Brandon Trebitowski on 7/29/10.
+//  Copyright RightSprite 2010. All rights reserved.
 //
 
 #import "NotifierViewController.h"
 
 @implementation NotifierViewController
 
-@synthesize datePicker;
-//@synthesize tableview;
-@synthesize eventText;
+@synthesize datePicker,tableview, eventText;
 
 - (void) viewWillAppear:(BOOL)animated {
-//	[self.tableview reloadData];
+	[self.tableview reloadData];
 }
 
 - (IBAction) scheduleAlarm:(id) sender {
@@ -43,6 +40,7 @@
     [dateComps setMinute:[timeComponents minute]];
 	[dateComps setSecond:[timeComponents second]];
     NSDate *itemDate = [calendar dateFromComponents:dateComps];
+    [dateComps release];
 	
     UILocalNotification *localNotif = [[UILocalNotification alloc] init];
     if (localNotif == nil)
@@ -64,64 +62,61 @@
 	
 	// Schedule the notification
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotif];
+    [localNotif release];
 	
-//	[self.tableview reloadData];
+	[self.tableview reloadData];
 }
 
 #pragma mark -
 #pragma mark Table view data source
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    // Return the number of sections.
-//    return 1;
-//}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
 
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//    // Return the number of rows in the section.
-//    return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
-//}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Return the number of rows in the section.
+    return [[[UIApplication sharedApplication] scheduledLocalNotifications] count];
+}
 
 
-//// Customize the appearance of table view cells.
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//
-//    static NSString *CellIdentifier = @"Cell";
-//
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-//    if (cell == nil) {
-//        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-//    }
-//
-//    // Configure the cell...
-//
-//	NSArray *notificationArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
-//	UILocalNotification *notif = [notificationArray objectAtIndex:indexPath.row];
-//
-//    [cell.textLabel setText:notif.alertBody];
-//	[cell.detailTextLabel setText:[notif.fireDate description]];
-//
-//    return cell;
-//}
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+    }
+    
+    // Configure the cell...
+    
+	NSArray *notificationArray = [[UIApplication sharedApplication] scheduledLocalNotifications];
+	UILocalNotification *notif = [notificationArray objectAtIndex:indexPath.row];
+	
+    [cell.textLabel setText:notif.alertBody];
+	[cell.detailTextLabel setText:[notif.fireDate description]];
+	
+    return cell;
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
 }
 
-//this helps the keyboard disappear when the user clicks return
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    [textField resignFirstResponder];
-    
-    return YES;
-}
-
 - (void)viewDidUnload {
 	datePicker = nil;
-//	tableview = nil;
+	tableview = nil;
 	eventText = nil;
 }
 
+
+- (void)dealloc {
+    [super dealloc];
+}
 
 @end

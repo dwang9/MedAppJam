@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BA7E5E41650702700C03835 /* Reminder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA7E5E31650702700C03835 /* Reminder.m */; };
 		1BF01C56165044E600D2735F /* GetHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BF01C55165044E600D2735F /* GetHelp.m */; };
 		41066CA616502157000214B2 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 41066CA516502157000214B2 /* .gitignore */; };
 		414262B91653A04800EC7F2F /* MoodInputController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 414262B81653A04800EC7F2F /* MoodInputController3.m */; };
@@ -20,7 +19,7 @@
 		41D96EDF164FE14C00AFF60F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41D96EDE164FE14C00AFF60F /* CoreGraphics.framework */; };
 		41D96EE5164FE14C00AFF60F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41D96EE3164FE14C00AFF60F /* InfoPlist.strings */; };
 		41D96EE7164FE14C00AFF60F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D96EE6164FE14C00AFF60F /* main.m */; };
-		41D96EEB164FE14C00AFF60F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D96EEA164FE14C00AFF60F /* AppDelegate.m */; };
+		41D96EEB164FE14C00AFF60F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41D96EEA164FE14C00AFF60F /* AppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		41D96EED164FE14C00AFF60F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D96EEC164FE14C00AFF60F /* Default.png */; };
 		41D96EEF164FE14C00AFF60F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D96EEE164FE14C00AFF60F /* Default@2x.png */; };
 		41D96EF1164FE14C00AFF60F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 41D96EF0164FE14C00AFF60F /* Default-568h@2x.png */; };
@@ -39,8 +38,7 @@
 		41EB4FEA1650767100404DD0 /* Pills.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE91650767100404DD0 /* Pills.png */; };
 		41EB4FF016507AF400404DD0 /* Face.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FEF16507AF400404DD0 /* Face.png */; };
 		4DF617291653518A006BF3F8 /* ResourcesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */; };
-		8703B7D91656FCE000086439 /* NotifierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8703B7D81656FCE000086439 /* NotifierViewController.m */; };
-		870BF29C1653590E0077BA75 /* ReminderObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 870BF29B1653590E0077BA75 /* ReminderObject.m */; };
+		8703B7D91656FCE000086439 /* NotifierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8703B7D81656FCE000086439 /* NotifierViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		878BC5981655FF0F001AF0E5 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 878BC5971655FF0F001AF0E5 /* Resources.m */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +53,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BA7E5E21650702700C03835 /* Reminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reminder.h; sourceTree = "<group>"; };
-		1BA7E5E31650702700C03835 /* Reminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reminder.m; sourceTree = "<group>"; };
 		1BF01C54165044E600D2735F /* GetHelp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetHelp.h; sourceTree = "<group>"; };
 		1BF01C55165044E600D2735F /* GetHelp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetHelp.m; sourceTree = "<group>"; };
 		41066CA516502157000214B2 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -104,8 +100,6 @@
 		4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesTableViewController.m; sourceTree = "<group>"; };
 		8703B7D71656FCE000086439 /* NotifierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifierViewController.h; sourceTree = "<group>"; };
 		8703B7D81656FCE000086439 /* NotifierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifierViewController.m; sourceTree = "<group>"; };
-		870BF29B1653590E0077BA75 /* ReminderObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReminderObject.m; sourceTree = "<group>"; };
-		870BF29D165359250077BA75 /* ReminderObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReminderObject.h; sourceTree = "<group>"; };
 		878BC5951655FEEE001AF0E5 /* Resources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Resources.h; sourceTree = "<group>"; };
 		878BC5971655FF0F001AF0E5 /* Resources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Resources.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,10 +164,6 @@
 			children = (
 				878BC5971655FF0F001AF0E5 /* Resources.m */,
 				878BC5951655FEEE001AF0E5 /* Resources.h */,
-				870BF29D165359250077BA75 /* ReminderObject.h */,
-				870BF29B1653590E0077BA75 /* ReminderObject.m */,
-				1BA7E5E21650702700C03835 /* Reminder.h */,
-				1BA7E5E31650702700C03835 /* Reminder.m */,
 				8703B7D71656FCE000086439 /* NotifierViewController.h */,
 				8703B7D81656FCE000086439 /* NotifierViewController.m */,
 				4DF617271653518A006BF3F8 /* ResourcesTableViewController.h */,
@@ -362,9 +352,7 @@
 				41D96EEB164FE14C00AFF60F /* AppDelegate.m in Sources */,
 				41D96EFA164FE14C00AFF60F /* ViewController.m in Sources */,
 				1BF01C56165044E600D2735F /* GetHelp.m in Sources */,
-				1BA7E5E41650702700C03835 /* Reminder.m in Sources */,
 				4DF617291653518A006BF3F8 /* ResourcesTableViewController.m in Sources */,
-				870BF29C1653590E0077BA75 /* ReminderObject.m in Sources */,
 				41C6FC1416536F35005F2BE7 /* MoodInputController1.m in Sources */,
 				41C6FC1816536F6C005F2BE7 /* MoodTrackerController.m in Sources */,
 				41A622251653793B0038D409 /* MoodInputController2.m in Sources */,
