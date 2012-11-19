@@ -138,6 +138,10 @@
 }
 
 
+- (IBAction)removeEntry:(id)sender {
+    [self performSegueWithIdentifier: @"SetRemoveEntry" sender:self];
+}
+
 - (IBAction)InputInformation:(id)sender {
     [self performSegueWithIdentifier:@"SetMoodInput1" sender: self];
     

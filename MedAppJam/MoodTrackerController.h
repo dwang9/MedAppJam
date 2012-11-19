@@ -32,6 +32,7 @@
 @property (strong, nonatomic) IBOutlet UITextView* output;
 @property (assign, nonatomic) BOOL contains;
 
+- (IBAction)removeEntry:(id)sender;
 - (IBAction)InputInformation:(id)sender;
 - (void) passEntry: (MoodEntry*) entry;
 - (IBAction)returnToMenu:(id)sender;
