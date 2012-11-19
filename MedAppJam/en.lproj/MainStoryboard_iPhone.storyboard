@@ -949,6 +949,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </state>
                                 <connections>
                                     <action selector="ok:" destination="KS6-Zq-Kps" eventType="touchUpInside" id="kyK-bt-w2I"/>
+                                    <action selector="remove:" destination="Rep-x4-MIW" eventType="touchUpInside" id="0Rx-fB-T6Y"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Which day are you removing data for?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kqk-IM-jan">
@@ -965,25 +966,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <color key="textColor" red="0.26089425319999998" green="0.35110411349999998" blue="0.15544017739999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" id="psd-a7-fvP">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.5236532518" green="0.70467952810000001" blue="0.31101482520000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <items>
-                                    <navigationItem title="Title" id="Nyc-OE-AlO">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="Dz3-Qu-AGB">
-                                            <connections>
-                                                <action selector="back:" destination="KS6-Zq-Kps" id="CjT-BJ-iUg"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="Ikl-0e-DHN">
-                                            <connections>
-                                                <action selector="cancel:" destination="KS6-Zq-Kps" id="w5P-Hp-hQq"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" id="QSx-0P-Tcg">
                                 <rect key="frame" x="0.0" y="131" width="320" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -1018,9 +1000,31 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
 </mutableData>
                                 </timeZone>
                             </datePicker>
+                            <navigationBar contentMode="scaleToFill" id="rIe-gp-jza">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.5236532518" green="0.70467952810000001" blue="0.31101482520000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="Title" id="vLc-tm-yUM">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="ZBZ-2g-eS7">
+                                            <connections>
+                                                <action selector="back:" destination="Rep-x4-MIW" id="dbC-R3-bst"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="Pi6-LJ-hVD">
+                                            <connections>
+                                                <action selector="cancel:" destination="Rep-x4-MIW" id="1r6-SP-fa6"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="QSx-0P-Tcg" id="YSp-Lk-oOp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WzR-Bg-iYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1035,11 +1039,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Untitled.png" id="RMw-qv-Sdi">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="461"/>
+                                <rect key="frame" x="0.0" y="-34" width="320" height="450"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uPK-bf-kmA">
-                                <rect key="frame" x="20" y="390" width="280" height="51"/>
+                                <rect key="frame" x="22" y="340" width="280" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Return To Menu">
@@ -1061,7 +1065,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qmV-2A-K6x">
-                                <rect key="frame" x="20" y="216" width="280" height="51"/>
+                                <rect key="frame" x="20" y="166" width="280" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Input Information">
@@ -1076,7 +1080,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Coe-wj-tMJ">
-                                <rect key="frame" x="20" y="274" width="280" height="51"/>
+                                <rect key="frame" x="20" y="224" width="280" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Remove Entry">
@@ -1087,12 +1091,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="InputInformation:" destination="L7o-fy-aaC" eventType="touchUpInside" id="QD9-aa-jTV"/>
                                     <action selector="removeEntry:" destination="L7o-fy-aaC" eventType="touchUpInside" id="oaM-Gp-yW6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ut7-je-7zh">
-                                <rect key="frame" x="20" y="332" width="280" height="51"/>
+                                <rect key="frame" x="20" y="282" width="280" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="View Previous Entries">
@@ -1104,7 +1107,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 </state>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Sh0-Ya-Xhs">
-                                <rect key="frame" x="25" y="53" width="275" height="155"/>
+                                <rect key="frame" x="25" y="53" width="275" height="105"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -1477,6 +1480,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         </class>
         <class className="RemoveEntryController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RemoveEntryController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="remove:"/>
+                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
+            </relationships>
         </class>
         <class className="Resources" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/Resources.h"/>

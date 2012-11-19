@@ -11,6 +11,7 @@
 #import "MoodInputController1.h"
 #import "MoodEntry.h"
 #import "AppDelegate.h"
+#import "RemoveEntryController.h"
 
 @interface MoodTrackerController ()
 
@@ -67,7 +68,50 @@
         
         
     }
+    else if([[segue identifier] isEqualToString: @"SetRemoveEntry"])
+    {
+        RemoveEntryController* controller = [segue destinationViewController];
+        controller.rootController = self;
+        controller.delegate = (id) self;
+    }
 }
+
+- (void) removeEntryFromArray: (MoodEntry*) entry;
+{
+    if (arrayOfEntries.count == 0)
+    {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle: @"No Data To Remove" message: @"You currently have no data stored in your Mood Tracker" delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
+        [alert show];
+    }
+    else
+    {
+        NSInteger index = -1;
+        for (MoodEntry* curEntry in arrayOfEntries)
+        {
+            if ([curEntry.date isEqualToDate: entry.date])
+            {
+                index = [arrayOfEntries indexOfObject: curEntry];
+            }
+        }
+        
+        if (index == -1)
+        {
+            UIAlertView* alert2 = [[UIAlertView alloc] initWithTitle: @"Entry To Be Removed Was Not Found" message: @"Your Mood Tracker does not contain any entry matching the same date as the input" delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
+            [alert2 show];
+        }
+        else
+        {
+            [arrayOfEntries removeObjectAtIndex: index];
+        }
+    
+        
+    }
+    
+    [delegate saveArrayOfEntries: self.arrayOfEntries];
+  
+    
+}
+
 
 
 
@@ -128,6 +172,11 @@
     {
         [string appendString: [NSString stringWithFormat:@"Date: %@, Mood %d, Notes, %@ \r", entry2.date, entry2.mood, entry2.notes]];
         output.text = string;
+    }
+    
+    if (arrayOfEntries.count == 0)
+    {
+        output.text = nil;
     }
     
 }

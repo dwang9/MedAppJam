@@ -10,8 +10,8 @@
 @class MoodEntry;
 
 @protocol RemoveEntryDelegate <NSObject>
-
-- (void) removeEntry;
+@required
+- (void) removeEntryFromArray: (MoodEntry*) entry;
 
 @end
 
@@ -19,9 +19,15 @@
 {
     @private
     MoodEntry* entry;
+    UIViewController* rootController;
+    IBOutlet UIDatePicker *datePicker;
 }
 
+@property (strong, nonatomic) UIViewController* rootController;
 @property (strong, nonatomic) MoodEntry* entry;
 @property (weak) id <RemoveEntryDelegate> delegate;
+- (IBAction)remove:(id)sender;
+- (IBAction)back:(id)sender;
+- (IBAction)cancel:(id)sender;
 
 @end
