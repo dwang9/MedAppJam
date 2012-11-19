@@ -42,6 +42,8 @@
 		41EB4FEA1650767100404DD0 /* Pills.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FE91650767100404DD0 /* Pills.png */; };
 		41EB4FF016507AF400404DD0 /* Face.png in Resources */ = {isa = PBXBuildFile; fileRef = 41EB4FEF16507AF400404DD0 /* Face.png */; };
 		41F054D71659A1B800C94ED0 /* CPDScatterPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F054D61659A1B800C94ED0 /* CPDScatterPlotViewController.m */; };
+		41FC54D11659FF4A003AD6A7 /* RetinaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FC54D01659FF4A003AD6A7 /* RetinaIcon.png */; };
+		41FC54D3165A0024003AD6A7 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 41FC54D2165A0024003AD6A7 /* Icon.png */; };
 		4DF617291653518A006BF3F8 /* ResourcesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */; };
 		8703B7D91656FCE000086439 /* NotifierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8703B7D81656FCE000086439 /* NotifierViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		878BC5981655FF0F001AF0E5 /* Resources.m in Sources */ = {isa = PBXBuildFile; fileRef = 878BC5971655FF0F001AF0E5 /* Resources.m */; };
@@ -159,7 +161,7 @@
 		41CE3CE016589E6600F6D511 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		41CE3CE216589FBC00F6D511 /* CPDStockPriceStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDStockPriceStore.h; sourceTree = "<group>"; };
 		41CE3CE316589FBC00F6D511 /* CPDStockPriceStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDStockPriceStore.m; sourceTree = "<group>"; };
-		41D96ED6164FE14C00AFF60F /* MedAppJam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MedAppJam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41D96ED6164FE14C00AFF60F /* HappierU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HappierU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41D96EDA164FE14C00AFF60F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		41D96EDC164FE14C00AFF60F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		41D96EDE164FE14C00AFF60F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -191,6 +193,8 @@
 		41EB4FEF16507AF400404DD0 /* Face.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Face.png; sourceTree = "<group>"; };
 		41F054D51659A1B800C94ED0 /* CPDScatterPlotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPDScatterPlotViewController.h; sourceTree = "<group>"; };
 		41F054D61659A1B800C94ED0 /* CPDScatterPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPDScatterPlotViewController.m; sourceTree = "<group>"; };
+		41FC54D01659FF4A003AD6A7 /* RetinaIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RetinaIcon.png; sourceTree = "<group>"; };
+		41FC54D2165A0024003AD6A7 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		4DF617271653518A006BF3F8 /* ResourcesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourcesTableViewController.h; sourceTree = "<group>"; };
 		4DF617281653518A006BF3F8 /* ResourcesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourcesTableViewController.m; sourceTree = "<group>"; };
 		8703B7D71656FCE000086439 /* NotifierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifierViewController.h; sourceTree = "<group>"; };
@@ -317,6 +321,8 @@
 		41D96ECB164FE14C00AFF60F = {
 			isa = PBXGroup;
 			children = (
+				41FC54D2165A0024003AD6A7 /* Icon.png */,
+				41FC54D01659FF4A003AD6A7 /* RetinaIcon.png */,
 				41CE3C9316589DFB00F6D511 /* CorePlotHeaders */,
 				41CE3C8816589DDB00F6D511 /* CorePlot-CocoaTouch.xcodeproj */,
 				41066CA516502157000214B2 /* .gitignore */,
@@ -330,7 +336,7 @@
 		41D96ED7164FE14C00AFF60F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41D96ED6164FE14C00AFF60F /* MedAppJam.app */,
+				41D96ED6164FE14C00AFF60F /* HappierU.app */,
 				41D96F00164FE14C00AFF60F /* MedAppJamTests.octest */,
 			);
 			name = Products;
@@ -444,7 +450,7 @@
 			);
 			name = MedAppJam;
 			productName = MedAppJam;
-			productReference = 41D96ED6164FE14C00AFF60F /* MedAppJam.app */;
+			productReference = 41D96ED6164FE14C00AFF60F /* HappierU.app */;
 			productType = "com.apple.product-type.application";
 		};
 		41D96EFF164FE14C00AFF60F /* MedAppJamTests */ = {
@@ -526,6 +532,8 @@
 				41EB4FE8165075F100404DD0 /* Book.png in Resources */,
 				41EB4FEA1650767100404DD0 /* Pills.png in Resources */,
 				41EB4FF016507AF400404DD0 /* Face.png in Resources */,
+				41FC54D11659FF4A003AD6A7 /* RetinaIcon.png in Resources */,
+				41FC54D3165A0024003AD6A7 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,7 +704,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HappierU;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -713,7 +721,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = HappierU;
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
