@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NotifierViewController : UIViewController<UITableViewDataSource,UITableViewDelegate> {
+@interface NotifierViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,UITextFieldDelegate> {
 	IBOutlet UITableView *tableview;
 	IBOutlet UIDatePicker *datePicker;
 	IBOutlet UITextField *eventText;

@@ -8,6 +8,7 @@
 //
 
 #import "ViewController.h"
+#import "CorePlot-CocoaTouch.h"
 
 @interface ViewController ()
 
