@@ -40,6 +40,9 @@
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    AppDelegate* appDelegate = (AppDelegate*) [UIApplication sharedApplication].delegate;
+    self.arrayOfEntries = appDelegate.arrayOfEntries;
   
     self.delegate = (id) [[UIApplication sharedApplication] delegate];
     
