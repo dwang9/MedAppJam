@@ -12,21 +12,29 @@
 
 @class MoodEntry;
 
+@protocol MoodTrackerDelegate <NSObject>
+@required
+- (id) saveArrayOfEntries: (NSMutableArray*) array;
+@end
+
 @interface MoodTrackerController : UIViewController <MoodInputDelegate>
 {
 @private
-    IBOutlet UILabel *output;
-    NSArray* arrayOfEntries;
-    NSUserDefaults* userDefault;
+    NSMutableArray* arrayOfEntries;
+    IBOutlet UITextView *output;
 
     
 }
 
-@property (strong, nonatomic) IBOutlet UILabel *output;
-@property (strong, nonatomic) NSArray* arrayOfEntries;
+@property (weak) id <MoodTrackerDelegate> delegate;
+@property (strong, nonatomic) NSMutableArray* arrayOfEntries;
+@property (strong, nonatomic) IBOutlet UITextView* output;
 
 - (IBAction)InputInformation:(id)sender;
 - (void) passEntry: (MoodEntry*) entry;
+- (IBAction)returnToMenu:(id)sender;
+- (IBAction)button:(id)sender;
+
 
 
 

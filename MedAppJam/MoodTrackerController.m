@@ -10,6 +10,7 @@
 #import "MoodTrackerController.h"
 #import "MoodInputController1.h"
 #import "MoodEntry.h"
+#import "AppDelegate.h"
 
 @interface MoodTrackerController ()
 
@@ -17,8 +18,10 @@
 
 @implementation MoodTrackerController
 
-@synthesize output;
 @synthesize arrayOfEntries;
+@synthesize delegate;
+@synthesize output;
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -32,8 +35,14 @@
 
 - (void)viewDidLoad
 {
+
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+  
+    self.delegate = (id) [[UIApplication sharedApplication] delegate];
+    
     
 
 }
@@ -56,15 +65,32 @@
     }
 }
 
+
+
 - (void) passEntry: (MoodEntry*) entry;
 {
-    NSMutableArray* array = [[NSMutableArray alloc] init];
-    [array addObject: entry];
+   // if (![arrayOfEntries containsObject: entry])
+    //{
+ 
+    [arrayOfEntries addObject: entry];
+
+    //}
+    [delegate saveArrayOfEntries: self.arrayOfEntries];
+
+}
+
+- (IBAction)returnToMenu:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+- (IBAction)button:(id)sender {
+    NSMutableString* string = [[NSMutableString alloc] init];
+    for (MoodEntry* entry2 in arrayOfEntries)
+    {
+        [string appendString: [NSString stringWithFormat:@"Date: %@, Mood %d, Notes, %@", entry2.date, entry2.mood, entry2.notes]];
+        output.text = string;
+    }
     
-    
-    output.numberOfLines = 10;
-    NSString* string = [NSString stringWithFormat:@"Date: %@, Mood %d, Notes, %@", entry.date, entry.mood, entry.notes];
-    output.text = string;
 }
 
 - (void)viewDidUnload {

@@ -13,6 +13,7 @@
 
 @synthesize window;
 @synthesize viewController;
+@synthesize arrayOfEntries;
 
 
 #pragma mark -
@@ -21,6 +22,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Override point for customization after application launch.
+    
+    
+    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+    if ([userDefaults objectForKey:@"arrayOFEntries"] == nil)
+    {
+        self.arrayOfEntries = [[NSMutableArray alloc] init];
+    }
+    else
+    {
+        self.arrayOfEntries = (NSMutableArray*)[userDefaults objectForKey: @"arrayOfEntries"];
+    }
+
     
     // Add the view controller's view to the window and display.
     [window addSubview:viewController.view];
@@ -52,10 +65,9 @@
 
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-     If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
-     */
+    NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject: arrayOfEntries forKey: @"arrayOfEntries"];
+    [userDefaults synchronize];
 }
 
 
@@ -80,6 +92,13 @@
      */
 }
 
+- (void) saveArrayOfEntries: (NSMutableArray*) array
+{
+    self.arrayOfEntries = array;
+}
+
+
+
 
 #pragma mark -
 #pragma mark Memory management
@@ -89,6 +108,7 @@
      Free up as much memory as possible by purging cached data objects that can be recreated (or reloaded from disk) later.
      */
 }
+
 
 
 - (void)dealloc {
