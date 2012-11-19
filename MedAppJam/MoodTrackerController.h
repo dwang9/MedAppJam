@@ -22,6 +22,7 @@
 @private
     NSMutableArray* arrayOfEntries;
     IBOutlet UITextView *output;
+    BOOL contains;
 
     
 }
@@ -29,6 +30,7 @@
 @property (weak) id <MoodTrackerDelegate> delegate;
 @property (strong, nonatomic) NSMutableArray* arrayOfEntries;
 @property (strong, nonatomic) IBOutlet UITextView* output;
+@property (assign, nonatomic) BOOL contains;
 
 - (IBAction)InputInformation:(id)sender;
 - (void) passEntry: (MoodEntry*) entry;

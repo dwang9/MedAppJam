@@ -66,7 +66,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     NSUserDefaults* userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject: arrayOfEntries forKey: @"arrayOfEntries"];
+    [userDefaults setObject: self.arrayOfEntries forKey: @"arrayOfEntries"];
     [userDefaults synchronize];
 }
 

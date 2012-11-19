@@ -36,7 +36,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     NSDate* now = [NSDate date];
-    [datePicker setDate: now animated:NO];
+    [self.datePicker setDate: now animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,7 +61,8 @@
         // Create a new instance of MoodEntry
         MoodEntry* newEntry = [[MoodEntry alloc] init];
         self.entry = newEntry;
-
+        
+        // Zero out the time component on the NSDate object
         unsigned int dateOnly = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
         NSCalendar* calendar = [NSCalendar currentCalendar];
         NSDateComponents* components = [calendar components:dateOnly fromDate:datePicker.date];

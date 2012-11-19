@@ -35,8 +35,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    moodSelectorArray = [[NSArray alloc] initWithObjects: @"Great", @"Very Good", @"Good", @"Average", @"Below Average", nil];
-    [moodSelector selectRow:2 inComponent:0 animated:NO];
+    self.moodSelectorArray = [[NSArray alloc] initWithObjects: @"Great", @"Very Good", @"Good", @"Average", @"Below Average", nil];
+    [self.moodSelector selectRow:2 inComponent:0 animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,13 +75,13 @@
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
     //set number of rows
-    return moodSelectorArray.count;
+    return self.moodSelectorArray.count;
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
     //set item per row
-    return [moodSelectorArray objectAtIndex:row];
+    return [self.moodSelectorArray objectAtIndex:row];
 }
 
 - (IBAction)cancel:(id)sender {

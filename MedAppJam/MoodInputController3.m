@@ -54,7 +54,7 @@
 }
 
 - (IBAction)cancel:(id)sender {
-    [rootController dismissModalViewControllerAnimated:YES];
+    [self.rootController dismissModalViewControllerAnimated:YES];
 }
 - (IBAction)back:(id)sender {
     [self dismissModalViewControllerAnimated:YES];
@@ -62,9 +62,9 @@
 
 - (IBAction)ok:(id)sender {
 
-    entry.notes = notesInput.text;
+    self.entry.notes = self.notesInput.text;
     
-    [rootController dismissModalViewControllerAnimated:YES];
+    [self.rootController dismissModalViewControllerAnimated:YES];
     [self.delegate passEntry: self.entry];
 }
 - (void)viewDidUnload {
