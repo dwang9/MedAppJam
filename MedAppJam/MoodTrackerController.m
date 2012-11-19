@@ -96,7 +96,7 @@
         
         if (index == -1)
         {
-            UIAlertView* alert2 = [[UIAlertView alloc] initWithTitle: @"Entry To Be Removed Was Not Found" message: @"Your Mood Tracker does not contain any entry matching the same date as the input" delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
+            UIAlertView* alert2 = [[UIAlertView alloc] initWithTitle: @"Entry To Be Removed Was Not Found" message: @"Your Mood Tracker does not contain any entry matching the same date as the input date" delegate: nil cancelButtonTitle: @"OK" otherButtonTitles: nil];
             [alert2 show];
         }
         else
